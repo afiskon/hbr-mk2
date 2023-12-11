@@ -2449,7 +2449,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 33e82e5f-34fd-4e97-8548-6a99553ab93e)
   )
-  (text "TODO reference" (at 177.8 98.425 0)
+  (text "see /AF Amplifier/" (at 177.8 97.79 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 4ea61e8a-160f-4178-a0bb-f55f9baa4426)
   )
