@@ -1656,7 +1656,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 5abfce5e-e47a-442d-bf8a-1233c42f38ac)
   )
-  (text "The blue LED ensures the voltage\nwill net exceed 3V."
+  (text "The blue LED ensures the voltage\nwill not exceed 3V."
     (at 161.29 153.67 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 7dad9b88-42c6-41cf-9812-16aa955dcba9)
