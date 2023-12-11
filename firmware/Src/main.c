@@ -100,14 +100,8 @@ static void MX_TIM2_Init(void);
 #define CH_VFO  0
 
 const int32_t CWFilterCenterFrequency = 8998300;
-
-/*
-const int32_t SSBFilterLowFrequency = 8997580;
-const int32_t SSBFilterHighFrequency = 9000780;
-*/
-
-const int32_t SSBFilterLowFrequency  = 8997700;
-const int32_t SSBFilterHighFrequency = 9000500;
+const int32_t SSBFilterLowFrequency  = 8997600;
+const int32_t SSBFilterHighFrequency = 9000670;
 
 const int32_t si5351_correction = 11014;
 
@@ -513,7 +507,7 @@ void changeFrequency(int32_t delta, bool force) {
 
     if(enabledSSBMode()) {
         if((currentBand == 0) || (currentBand == 1)) {
-            /* Low freqyency BFO is used on 80 and 40 meters */
+            /* Low frequency BFO is used on 80 and 40 meters */
             Fvfo = bands[currentBand].lastFreq + SSBFilterLowFrequency;
         } else {
             Fvfo = bands[currentBand].lastFreq + SSBFilterHighFrequency;
