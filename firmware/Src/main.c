@@ -603,23 +603,23 @@ void displaySMeterOrMode(bool force) {
 
         if(voltage <= 0.035) {
             sValue = "S0      ";
-        } else if(voltage <= 0.04) {
+        } else if(voltage <= 0.038) {
             sValue = "S1      ";
-        } else if(voltage <= 0.06) {
+        } else if(voltage <= 0.042) {
             sValue = "S2\x02     ";
-        } else if(voltage <= 0.1) {
+        } else if(voltage <= 0.045) {
             sValue = "S3\x02     ";
-        } else if(voltage <= 0.2) {
+        } else if(voltage <= 0.1) {
             sValue = "S4\x02\x03    ";
-        } else if(voltage <= 0.5) {
+        } else if(voltage <= 0.25) {
             sValue = "S5\x02\x03    ";
-        } else if(voltage <= 0.9) {
+        } else if(voltage <= 0.6) {
             sValue = "S6\x02\x03\x04   ";
-        } else if(voltage <= 1.8) {
+        } else if(voltage <= 1.1) {
             sValue = "S7\x02\x03\x04\x05  ";
         } else if(voltage <= 2.2) {
             sValue = "S8\x02\x03\x04\x05\x06 ";
-        } else if(voltage <= 2.65) {
+        } else if(voltage <= 2.5) {
             sValue = "S9\x02\x03\x04\x05\x06\x07";
         } else {
             sValue = "S+\x02\x03\x04\x05\x06\x07";
