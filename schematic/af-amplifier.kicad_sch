@@ -801,58 +801,6 @@
         )
       )
     )
-    (symbol "power:+12V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "+12V" (at 0 3.556 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "global power" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"+12V\"" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "+12V_0_1"
-        (polyline
-          (pts
-            (xy -0.762 1.27)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 2.54)
-            (xy 0.762 1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "+12V_1_1"
-        (pin power_in line (at 0 0 90) (length 0) hide
-          (name "+12V" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
     (symbol "power:+8V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (at 0 -3.81 0)
         (effects (font (size 1.27 1.27)) hide)
@@ -1978,6 +1926,34 @@
     )
   )
 
+  (symbol (lib_id "power:+8V") (at 97.155 109.22 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 1e13687f-2bf1-4698-92d9-da1576c60342)
+    (property "Reference" "#PWR0240" (at 97.155 113.03 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+8V" (at 97.155 104.775 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 97.155 109.22 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 97.155 109.22 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid cbc8b075-0a5f-4123-94ca-411da3bf9c16))
+    (instances
+      (project "hbr-mk2"
+        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/53c64ec8-e682-4447-a686-92e02593189c"
+          (reference "#PWR0240") (unit 1)
+        )
+        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/56e6206b-9eaf-48e3-8e65-5aed78d22a1d"
+          (reference "#PWR0223") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:GND") (at 266.065 48.895 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1e580a79-3842-49a3-b903-962040ee25cf)
@@ -2394,31 +2370,6 @@
       (project "hbr-mk2"
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/56e6206b-9eaf-48e3-8e65-5aed78d22a1d"
           (reference "U7") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+12V") (at 85.09 145.415 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 5163a3e4-1542-4b25-85ab-39e94b66e214)
-    (property "Reference" "#PWR0220" (at 85.09 149.225 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+12V" (at 85.09 140.97 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 85.09 145.415 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 85.09 145.415 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 17840b77-a12b-4a58-bc4b-d86a9fe6eb87))
-    (instances
-      (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/56e6206b-9eaf-48e3-8e65-5aed78d22a1d"
-          (reference "#PWR0220") (unit 1)
         )
       )
     )
@@ -3073,6 +3024,34 @@
     )
   )
 
+  (symbol (lib_id "power:+8V") (at 85.09 145.415 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 8fcef7ab-b9af-4471-9dbb-379695b384e1)
+    (property "Reference" "#PWR0240" (at 85.09 149.225 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+8V" (at 85.09 140.97 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 85.09 145.415 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 85.09 145.415 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid e2aa07ed-d065-430b-adb3-87dc3c37b69f))
+    (instances
+      (project "hbr-mk2"
+        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/53c64ec8-e682-4447-a686-92e02593189c"
+          (reference "#PWR0240") (unit 1)
+        )
+        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/56e6206b-9eaf-48e3-8e65-5aed78d22a1d"
+          (reference "#PWR0220") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Device:R") (at 97.155 132.715 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 99bffd32-f002-4914-9f57-d6e32d5b0636)
@@ -3356,31 +3335,6 @@
     )
   )
 
-  (symbol (lib_id "power:+12V") (at 52.07 145.415 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid c0389fcf-e083-4cb8-a9f5-da449bda1ba4)
-    (property "Reference" "#PWR0223" (at 52.07 149.225 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+12V" (at 52.07 140.97 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 52.07 145.415 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 52.07 145.415 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 7cc90b3a-2405-4e98-8071-dd78033d26da))
-    (instances
-      (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/56e6206b-9eaf-48e3-8e65-5aed78d22a1d"
-          (reference "#PWR0223") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "Device:C") (at 59.055 75.565 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c7276d7f-70da-4ec5-a5b1-bf9db893582a)
@@ -3478,31 +3432,6 @@
       (project "hbr-mk2"
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/56e6206b-9eaf-48e3-8e65-5aed78d22a1d"
           (reference "C113") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+12V") (at 97.155 109.22 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid cb6feda1-9629-485b-aa4d-7099fbd7a876)
-    (property "Reference" "#PWR0226" (at 97.155 113.03 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+12V" (at 97.155 104.775 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 97.155 109.22 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 97.155 109.22 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 7413655c-372d-478d-839d-7a130a5e074b))
-    (instances
-      (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/56e6206b-9eaf-48e3-8e65-5aed78d22a1d"
-          (reference "#PWR0226") (unit 1)
         )
       )
     )
@@ -3735,6 +3664,34 @@
       (project "hbr-mk2"
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/56e6206b-9eaf-48e3-8e65-5aed78d22a1d"
           (reference "R13") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+8V") (at 52.07 145.415 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid ed2da1c9-ed3d-4ffd-a119-a57391ca439b)
+    (property "Reference" "#PWR0240" (at 52.07 149.225 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+8V" (at 52.07 140.97 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 52.07 145.415 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 52.07 145.415 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 0c358700-6dec-44ef-9f9c-7d9dccb0c4f1))
+    (instances
+      (project "hbr-mk2"
+        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/53c64ec8-e682-4447-a686-92e02593189c"
+          (reference "#PWR0240") (unit 1)
+        )
+        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/56e6206b-9eaf-48e3-8e65-5aed78d22a1d"
+          (reference "#PWR0240") (unit 1)
         )
       )
     )
