@@ -95,9 +95,9 @@ static void MX_TIM2_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
-#define CH_CW   2 // TODO FIXME see ensureTransmitMode()
-#define CH_CAL  1
 #define CH_VFO  0
+#define CH_CAL  1
+#define CH_CW   2
 
 const int32_t CWFilterCenterFrequency = 8998300;
 const int32_t SSBFilterLowFrequency  = 8997600;
@@ -484,7 +484,7 @@ bool enabledSSBMode() {
     return (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_4) == GPIO_PIN_RESET);
 }
 
-void changeFrequency(int32_t delta, bool force) {
+void changeFrequency(int32_t delta, bool tx, bool force) {
     static int32_t prevFvfo = 0;
 
     if((!force) && lockMode) {
@@ -513,11 +513,19 @@ void changeFrequency(int32_t delta, bool force) {
             Fvfo = bands[currentBand].lastFreq + SSBFilterHighFrequency;
         }
     } else {
+        // this path is executed only when receiving CW
         Fvfo = bands[currentBand].lastFreq + CWFilterCenterFrequency;
     }
 
-    if(clarMode == CLAR_MODE_RIT) { // TODO FIXME double-check this for LSB and USB
-        Fvfo += clarOffset;
+    if(tx) {
+        // this path is executed only when transmitting SSB
+        if(clarMode == CLAR_MODE_XIT) {
+            Fvfo += clarOffset;
+        }
+    } else {
+        if(clarMode == CLAR_MODE_RIT) {
+            Fvfo += clarOffset;
+        }
     }
 
     if(force || (Fvfo != prevFvfo)) {
@@ -546,7 +554,7 @@ void checkIfRxModeHasChanged() {
     }
 
     if((prevSSBMode != ssbMode) || firstCall) {
-        changeFrequency(0, true);
+        changeFrequency(0, false, true);
         prevSSBMode = ssbMode;
     }
 
@@ -717,25 +725,29 @@ void changeBand(int32_t delta) {
     switchBPFs(bands[currentBand].bpf);
     switchLPFs(bands[currentBand].lpf);
 
-    changeFrequency(0, false);
+    changeFrequency(0, false, false);
     si5351_EnableOutputs(1 << CH_VFO);
     displayFrequency();
 }
 
-void ensureTransmitMode() {
+void ensureTransmitMode(bool ssb) {
     if(inTransmitMode) {
         return;
     }
 
-    int32_t targetFrequency = bands[currentBand].lastFreq;
-    if(clarMode == CLAR_MODE_XIT) {
-        targetFrequency += clarOffset;
-    }
+    if(ssb) {
+        // changes VFO frequency accordingly
+        changeFrequency(0, true, true);
+    } else {
+        int32_t targetFrequency = bands[currentBand].lastFreq;
+        if(clarMode == CLAR_MODE_XIT) {
+            targetFrequency += clarOffset;
+        }
 
-    // TODO FIXME: use correct VFO (from targetFrequency)
-    // TODO FIXME: don't send CH_CW in SSB mode
-    SetupCLK(CH_CW, CWFilterCenterFrequency, bands[currentBand].txDriveStrength);
-    si5351_EnableOutputs(1 << CH_CW);  
+        // TODO FIXME: use correct VFO (from targetFrequency)
+        SetupCLK(CH_CW, CWFilterCenterFrequency, bands[currentBand].txDriveStrength);
+        si5351_EnableOutputs(1 << CH_CW);
+    }
 
     enableTx(true);
 
@@ -752,7 +764,7 @@ void ensureReceiveMode() { // TODO FIXME
     enableTx(false);
 
     // Restore the original VFO
-    changeFrequency(0, true);
+    changeFrequency(0, false, true);
     si5351_EnableOutputs(1 << CH_VFO);
     displaySMeterOrMode(true);
     inTransmitMode = false;
@@ -1333,7 +1345,7 @@ void loopMain() {
         if(!inTransmitMode) {
             // enter transmit mode
             transmittingSSB = enabledSSBMode();
-            ensureTransmitMode();
+            ensureTransmitMode(transmittingSSB);
             resetSWRMeter();
 
             if(keyerConfig.straightKey) {
@@ -1378,7 +1390,7 @@ void loopMain() {
 
         int32_t delta = getDelta(&htim1, &prevMainCounter, MAIN_DELTA_MULT, MAIN_DELTA_DIV);
         if(delta != 0) {
-            changeFrequency(delta, false); // will do nothing in LOCK mode
+            changeFrequency(delta, false, false); // will do nothing in LOCK mode
             displayFrequency();
         }
 
@@ -1393,7 +1405,7 @@ void loopMain() {
                 }
 
                 if(clarMode == CLAR_MODE_RIT) {
-                    changeFrequency(0, false);
+                    changeFrequency(0, false, false);
                 }
                 displaySMeterOrMode(true);
             }
@@ -1435,7 +1447,7 @@ void loopMain() {
                     clarMode = CLAR_MODE_DISABLED;
                 }
 
-                changeFrequency(0, true);
+                changeFrequency(0, false, true);
                 displaySMeterOrMode(true);
             } else if(buttonKeyerPressed() == BUTTON_STATUS_PRESSED) {
                 loopKeyer();
