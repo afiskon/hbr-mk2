@@ -1324,12 +1324,15 @@ void loopMain() {
     static int32_t prevMainCounter = 0;
     static int32_t prevClarCounter = 0;
     static uint32_t transmitModeEnterTime = 0;
+    static bool transmittingSSB = false;
     bool ditPressed = buttonDitPressed();
     bool dahPressed = buttonDahPressed();
 
     if(ditPressed || dahPressed) {
         transmitModeEnterTime = HAL_GetTick();
         if(!inTransmitMode) {
+            // enter transmit mode
+            transmittingSSB = enabledSSBMode();
             ensureTransmitMode();
             resetSWRMeter();
 
@@ -1340,6 +1343,7 @@ void loopMain() {
             }
         }
     } else {
+        // exit TX mode due to inactivity?
         uint32_t tstamp = HAL_GetTick();
         if((tstamp - transmitModeEnterTime > keyerConfig.ditTimeMs*15) && (inTransmitMode)) {
             ensureReceiveMode();
@@ -1350,6 +1354,17 @@ void loopMain() {
     }
 
     if(inTransmitMode) {
+        if(enabledSSBMode() != transmittingSSB) {
+            // stop transmitting when user switches the mode
+            ensureReceiveMode();
+            // discard any changes in counters
+            (void)getDelta(&htim1, &prevMainCounter, MAIN_DELTA_MULT, MAIN_DELTA_DIV);
+            (void)getDelta(&htim2, &prevClarCounter, CLAR_DELTA_MULT, CLAR_DELTA_DIV);
+
+            // loopMain() will be called again from the main loop
+            return;
+        }
+
         if(keyerConfig.straightKey) {
             processStraightKeyerLogic(ditPressed);
         } else {
