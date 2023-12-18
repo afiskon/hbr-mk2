@@ -1812,6 +1812,10 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 2e5ebf39-ad5d-4e49-a4df-bb8c2a1dadfb)
   )
+  (text "see /RX/" (at 271.78 28.575 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid bb876ca8-5736-4c65-9b13-1977ff7e947c)
+  )
 
   (global_label "BPF_12_OUT" (shape bidirectional) (at 248.92 111.125 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))

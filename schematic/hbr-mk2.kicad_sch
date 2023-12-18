@@ -4996,6 +4996,23 @@
     )
   )
 
+  (sheet (at 19.05 146.05) (size 18.415 8.255) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 86d9728c-6234-48b6-9832-cb64f716a194)
+    (property "Sheetname" "TX Common" (at 19.05 145.3384 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "tx-common.kicad_sch" (at 19.05 154.8896 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "hbr-mk2"
+        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d" (page "11"))
+      )
+    )
+  )
+
   (sheet (at 19.05 118.11) (size 18.415 8.255) (fields_autoplaced)
     (stroke (width 0.1524) (type solid))
     (fill (color 0 0 0 0.0000))
