@@ -527,7 +527,7 @@ void changeFrequency(int32_t delta, bool force) {
     prevFvfo = Fvfo;
 }
 
-void checkIfModeHasChanged() {
+void checkIfRxModeHasChanged() {
     static bool firstCall = true;
     static bool prevBFOSwitch = false;
     static bool prevSSBMode = false;
@@ -1230,7 +1230,7 @@ void loopKeyer() {
 
     for(;;) {
         /* process CW/SSB switch while in KEYER menu */
-        checkIfModeHasChanged();
+        checkIfRxModeHasChanged();
 
         if(keyerConfig.settingsPage == KEYER_SETINGS_PAGE_SPEED) {
             bool ditPressed = buttonDitPressed();
@@ -1359,7 +1359,7 @@ void loopMain() {
         updateSWRMeter();
     } else {
         /* do it only in RX mode */
-        checkIfModeHasChanged();
+        checkIfRxModeHasChanged();
 
         int32_t delta = getDelta(&htim1, &prevMainCounter, MAIN_DELTA_MULT, MAIN_DELTA_DIV);
         if(delta != 0) {
