@@ -214,8 +214,9 @@ typedef struct {
     /*
      * Compensate for losses in RG-174, frequency response of the given
      * PA depending on the used transistor, imperfections of the LPFs, etc.
+     * This works only for CW.
      */
-    si5351DriveStrength_t txDriveStrength; // TODO FIXME?
+    si5351DriveStrength_t txDriveStrength;
 } BandInfo_t;
 
 int32_t currentBand = 3; // default: 20m
@@ -744,9 +745,13 @@ void ensureTransmitMode(bool ssb) {
             targetFrequency += clarOffset;
         }
 
-        // TODO FIXME: use correct VFO (from targetFrequency)
+        // Always transmit the carrier signal.
+        // It is keyed by keyUp() and keyDown().
         SetupCLK(CH_CW, CWFilterCenterFrequency, bands[currentBand].txDriveStrength);
-        si5351_EnableOutputs(1 << CH_CW);
+
+        SetupCLK(CH_VFO, targetFrequency + CWFilterCenterFrequency, SI5351_DRIVE_STRENGTH_4MA);
+
+        si5351_EnableOutputs((1 << CH_CW) | (1 << CH_VFO));
     }
 
     enableTx(true);
@@ -757,7 +762,7 @@ void ensureTransmitMode(bool ssb) {
     inTransmitMode = true;
 }
 
-void ensureReceiveMode() { // TODO FIXME
+void ensureReceiveMode() {
     if(!inTransmitMode) {
         return;
     }
