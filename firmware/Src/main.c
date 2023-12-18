@@ -731,12 +731,12 @@ void changeBand(int32_t delta) {
     displayFrequency();
 }
 
-void ensureTransmitMode(bool ssb) {
+void ensureTransmitMode() {
     if(inTransmitMode) {
         return;
     }
 
-    if(ssb) {
+    if(enabledSSBMode()) {
         // changes VFO frequency accordingly
         changeFrequency(0, true, true);
     } else {
@@ -1350,7 +1350,7 @@ void loopMain() {
         if(!inTransmitMode) {
             // enter transmit mode
             transmittingSSB = enabledSSBMode();
-            ensureTransmitMode(transmittingSSB);
+            ensureTransmitMode();
             resetSWRMeter();
 
             if(keyerConfig.straightKey) {
@@ -1371,21 +1371,12 @@ void loopMain() {
     }
 
     if(inTransmitMode) {
-        if(enabledSSBMode() != transmittingSSB) {
-            // stop transmitting when user switches the mode
-            ensureReceiveMode();
-            // discard any changes in counters
-            (void)getDelta(&htim1, &prevMainCounter, MAIN_DELTA_MULT, MAIN_DELTA_DIV);
-            (void)getDelta(&htim2, &prevClarCounter, CLAR_DELTA_MULT, CLAR_DELTA_DIV);
-
-            // loopMain() will be called again from the main loop
-            return;
-        }
-
-        if(keyerConfig.straightKey) {
-            processStraightKeyerLogic(ditPressed);
-        } else {
-            processIambicKeyerLogic(ditPressed, dahPressed);
+        if(!transmittingSSB) {
+            if(keyerConfig.straightKey) {
+                processStraightKeyerLogic(ditPressed);
+            } else {
+                processIambicKeyerLogic(ditPressed, dahPressed);
+            }
         }
 
         updateSWRMeter();
