@@ -1212,7 +1212,7 @@ void enterKeyerSaveMode() {
     LCD_SendString("MSG");
 }
 
-void loopKeyer(bool* startSendingSavedMessage) {
+void loopKeyer() {
     bool keyerInitDone = false;
     uint32_t keyerInitTime = 0;
     int32_t prevCounter = 0;
@@ -1423,13 +1423,13 @@ void loopMain() {
                 changeFrequency(0, true);
                 displaySMeterOrMode(true);
             } else if(buttonKeyerPressed() == BUTTON_STATUS_PRESSED) {
-                bool startSendingSavedMessage = false;
-                loopKeyer(&startSendingSavedMessage);
+                loopKeyer();
                 // discard any changes in counters
                 (void)getDelta(&htim1, &prevMainCounter, MAIN_DELTA_MULT, MAIN_DELTA_DIV);
                 (void)getDelta(&htim2, &prevClarCounter, CLAR_DELTA_MULT, CLAR_DELTA_DIV);
 
-                if(startSendingSavedMessage) {
+                /*
+                if(startSendingSavedMessage) { // TODO FIXME - use XMIT button instead
                     // process XMIT MSG
                     ensureTransmitMode();
                     resetSWRMeter();
@@ -1446,6 +1446,7 @@ void loopMain() {
                     // loopMain() will be called again from the main loop
                     return; 
                 }
+                */
             }
         }
 
