@@ -639,11 +639,18 @@ void displaySMeterOrMode(bool force) {
 }
 
 void keyDown() {
+    if(inTransmitMode) {
+        HAL_GPIO_WritePin(GPIOC, GPIO_PIN_14, GPIO_PIN_SET);
+    }
+
     // CW tone ON
     HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_SET);
 }
 
 void keyUp() {
+    // make sure ENABLE_KEYED_VCC is low regardless of inTransmitMode value
+    HAL_GPIO_WritePin(GPIOC, GPIO_PIN_14, GPIO_PIN_RESET);
+
     // CW tone OFF
     HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
 }
