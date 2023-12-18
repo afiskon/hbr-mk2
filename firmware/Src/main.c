@@ -228,7 +228,7 @@ BandInfo_t bands[] = {
         .lastFreq = 3560000,
         .lpf = USE_LPF_80,
         .bpf = USE_BPF_80,
-        .txDriveStrength = SI5351_DRIVE_STRENGTH_8MA,
+        .txDriveStrength = SI5351_DRIVE_STRENGTH_4MA,
     },
     {
         .minFreq  = 7000000,
@@ -236,7 +236,7 @@ BandInfo_t bands[] = {
         .lastFreq = 7030000,
         .lpf = USE_LPF_40_30,
         .bpf = USE_BPF_40,
-        .txDriveStrength = SI5351_DRIVE_STRENGTH_8MA,
+        .txDriveStrength = SI5351_DRIVE_STRENGTH_4MA,
     },
     {
         .minFreq  = 10100000,
@@ -244,7 +244,7 @@ BandInfo_t bands[] = {
         .lastFreq = 10116000,
         .lpf = USE_LPF_40_30,
         .bpf = USE_BPF_30,
-        .txDriveStrength = SI5351_DRIVE_STRENGTH_8MA,
+        .txDriveStrength = SI5351_DRIVE_STRENGTH_6MA,
     },
     {
         .minFreq  = 14000000,
@@ -252,7 +252,7 @@ BandInfo_t bands[] = {
         .lastFreq = 14060000,
         .lpf = USE_LPF_20_17,
         .bpf = USE_BPF_20,
-        .txDriveStrength = SI5351_DRIVE_STRENGTH_8MA,
+        .txDriveStrength = SI5351_DRIVE_STRENGTH_6MA,
     },
     {
         .minFreq  = 18068000,
@@ -260,7 +260,7 @@ BandInfo_t bands[] = {
         .lastFreq = 18086000,
         .lpf = USE_LPF_20_17,
         .bpf = USE_BPF_17,
-        .txDriveStrength = SI5351_DRIVE_STRENGTH_8MA,
+        .txDriveStrength = SI5351_DRIVE_STRENGTH_6MA,
     },
     {
         .minFreq  = 21000000,
@@ -268,7 +268,7 @@ BandInfo_t bands[] = {
         .lastFreq = 21060000,
         .lpf = USE_LPF_15_12_10,
         .bpf = USE_BPF_15,
-        .txDriveStrength = SI5351_DRIVE_STRENGTH_8MA,
+        .txDriveStrength = SI5351_DRIVE_STRENGTH_6MA,
     },
     {
         .minFreq  = 24890000,
