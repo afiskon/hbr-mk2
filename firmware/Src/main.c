@@ -106,7 +106,6 @@ const int32_t SSBFilterHighFrequency = 9000670;
 const int32_t si5351_correction = 11014;
 
 // 2MA is about 2 dBm which is enough for ADE-1L
-// increase to 4MA if you are using a different mixer
 const si5351DriveStrength_t VFODriveStrength = SI5351_DRIVE_STRENGTH_2MA;
 
 /* Adjust for used rotary encoders */
@@ -248,7 +247,7 @@ BandInfo_t bands[] = {
         .lastFreq = 10116000,
         .lpf = USE_LPF_40_30,
         .bpf = USE_BPF_30,
-        .txDriveStrength = SI5351_DRIVE_STRENGTH_4MA,
+        .txDriveStrength = SI5351_DRIVE_STRENGTH_2MA,
     },
     {
         .minFreq  = 14000000,
@@ -256,7 +255,7 @@ BandInfo_t bands[] = {
         .lastFreq = 14060000,
         .lpf = USE_LPF_20_17,
         .bpf = USE_BPF_20,
-        .txDriveStrength = SI5351_DRIVE_STRENGTH_4MA,
+        .txDriveStrength = SI5351_DRIVE_STRENGTH_2MA,
     },
     {
         .minFreq  = 18068000,
@@ -264,7 +263,7 @@ BandInfo_t bands[] = {
         .lastFreq = 18086000,
         .lpf = USE_LPF_20_17,
         .bpf = USE_BPF_17,
-        .txDriveStrength = SI5351_DRIVE_STRENGTH_6MA,
+        .txDriveStrength = SI5351_DRIVE_STRENGTH_2MA,
     },
     {
         .minFreq  = 21000000,
@@ -272,7 +271,7 @@ BandInfo_t bands[] = {
         .lastFreq = 21060000,
         .lpf = USE_LPF_15_12_10,
         .bpf = USE_BPF_15,
-        .txDriveStrength = SI5351_DRIVE_STRENGTH_6MA,
+        .txDriveStrength = SI5351_DRIVE_STRENGTH_2MA,
     },
     {
         .minFreq  = 24890000,
@@ -280,7 +279,7 @@ BandInfo_t bands[] = {
         .lastFreq = 24906000,
         .lpf = USE_LPF_15_12_10,
         .bpf = USE_BPF_12,
-        .txDriveStrength = SI5351_DRIVE_STRENGTH_8MA,
+        .txDriveStrength = SI5351_DRIVE_STRENGTH_2MA,
     },
     {
         .minFreq  = 28000000,
@@ -288,7 +287,7 @@ BandInfo_t bands[] = {
         .lastFreq = 28060000,
         .lpf = USE_LPF_15_12_10,
         .bpf = USE_BPF_10,
-        .txDriveStrength = SI5351_DRIVE_STRENGTH_8MA,
+        .txDriveStrength = SI5351_DRIVE_STRENGTH_2MA,
     },
 };
 
