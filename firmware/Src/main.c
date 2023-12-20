@@ -105,6 +105,10 @@ const int32_t SSBFilterHighFrequency = 9000670;
 
 const int32_t si5351_correction = 11014;
 
+// 2MA is about 2 dBm which is enough for ADE-1L
+// increase to 4MA if you are using a different mixer
+const si5351DriveStrength_t VFODriveStrength = SI5351_DRIVE_STRENGTH_2MA;
+
 /* Adjust for used rotary encoders */
 #define MAIN_DELTA_DIV 20
 #define MAIN_DELTA_MULT 1
@@ -530,7 +534,7 @@ void changeFrequency(int32_t delta, bool tx, bool force) {
     }
 
     if(force || (Fvfo != prevFvfo)) {
-        SetupCLK(CH_VFO, Fvfo, SI5351_DRIVE_STRENGTH_4MA);
+        SetupCLK(CH_VFO, Fvfo, VFODriveStrength);
     }
 
     prevFvfo = Fvfo;
@@ -758,7 +762,7 @@ void ensureTransmitMode() {
         // Always transmit the carrier signal.
         // It is keyed by keyUp() and keyDown().
         SetupCLK(CH_CW, CWFilterCenterFrequency, bands[currentBand].txDriveStrength);
-        SetupCLK(CH_VFO, targetFrequency + CWFilterCenterFrequency, SI5351_DRIVE_STRENGTH_4MA);
+        SetupCLK(CH_VFO, targetFrequency + CWFilterCenterFrequency, VFODriveStrength);
         keyUp(); // calls si5351_EnableOutputs()
     }
 
