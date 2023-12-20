@@ -649,6 +649,10 @@ void displaySMeterOrMode(bool force) {
 
 void keyDown() {
     if(inTransmitMode) {
+        // enable CH_CW
+        si5351_EnableOutputs((1 << CH_CW) | (1 << CH_VFO));
+
+        // ENABLE_KEYED_VCC
         HAL_GPIO_WritePin(GPIOC, GPIO_PIN_14, GPIO_PIN_SET);
     }
 
@@ -662,6 +666,9 @@ void keyUp() {
 
     // CW tone OFF
     HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
+
+    // disable CH_CW
+    si5351_EnableOutputs(1 << CH_VFO);
 }
 
 void switchLPFs(UseLPF_t lpf) { // TODO FIXME
@@ -739,6 +746,9 @@ void ensureTransmitMode() {
     if(enabledSSBMode()) {
         // changes VFO frequency accordingly
         changeFrequency(0, true, true);
+
+        // ENABLE_KEYED_VCC
+        HAL_GPIO_WritePin(GPIOC, GPIO_PIN_14, GPIO_PIN_SET);
     } else {
         int32_t targetFrequency = bands[currentBand].lastFreq;
         if(clarMode == CLAR_MODE_XIT) {
@@ -748,10 +758,8 @@ void ensureTransmitMode() {
         // Always transmit the carrier signal.
         // It is keyed by keyUp() and keyDown().
         SetupCLK(CH_CW, CWFilterCenterFrequency, bands[currentBand].txDriveStrength);
-
         SetupCLK(CH_VFO, targetFrequency + CWFilterCenterFrequency, SI5351_DRIVE_STRENGTH_4MA);
-
-        si5351_EnableOutputs((1 << CH_CW) | (1 << CH_VFO));
+        keyUp(); // calls si5351_EnableOutputs()
     }
 
     enableTx(true);
@@ -766,6 +774,8 @@ void ensureReceiveMode() {
     if(!inTransmitMode) {
         return;
     }
+
+    keyUp(); // ENABLE_KEYED_VCC = LOW, etc
     enableTx(false);
 
     // Restore the original VFO
@@ -1353,10 +1363,12 @@ void loopMain() {
             ensureTransmitMode();
             resetSWRMeter();
 
-            if(keyerConfig.straightKey) {
-                initStraightKeyer();
-            } else {
-                initIambicKeyer();
+            if(!transmittingSSB) {
+                if(keyerConfig.straightKey) {
+                    initStraightKeyer();
+                } else {
+                    initIambicKeyer();
+                }
             }
         }
     } else {
