@@ -104,9 +104,7 @@ const int32_t SSBFilterLowFrequency  = 8997600;
 const int32_t SSBFilterHighFrequency = 9000670;
 
 const int32_t si5351_correction = 11014;
-
-// 2MA is about 2 dBm which is enough for ADE-1L
-const si5351DriveStrength_t VFODriveStrength = SI5351_DRIVE_STRENGTH_2MA;
+const si5351DriveStrength_t VFODriveStrength = SI5351_DRIVE_STRENGTH_4MA;
 
 /* Adjust for used rotary encoders */
 #define MAIN_DELTA_DIV 20
@@ -279,7 +277,7 @@ BandInfo_t bands[] = {
         .lastFreq = 24906000,
         .lpf = USE_LPF_15_12_10,
         .bpf = USE_BPF_12,
-        .txDriveStrength = SI5351_DRIVE_STRENGTH_2MA,
+        .txDriveStrength = SI5351_DRIVE_STRENGTH_4MA,
     },
     {
         .minFreq  = 28000000,
@@ -287,7 +285,7 @@ BandInfo_t bands[] = {
         .lastFreq = 28060000,
         .lpf = USE_LPF_15_12_10,
         .bpf = USE_BPF_10,
-        .txDriveStrength = SI5351_DRIVE_STRENGTH_2MA,
+        .txDriveStrength = SI5351_DRIVE_STRENGTH_4MA,
     },
 };
 
