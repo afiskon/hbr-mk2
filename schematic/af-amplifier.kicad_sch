@@ -3730,7 +3730,7 @@
     (property "Reference" "U8" (at 39.37 56.515 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "ADE-1L" (at 39.37 59.055 0)
+    (property "Value" "ADE-6" (at 39.37 59.055 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "RF_Mini-Circuits:Mini-Circuits_CD542_LandPatternPL-052" (at 41.275 77.47 0)

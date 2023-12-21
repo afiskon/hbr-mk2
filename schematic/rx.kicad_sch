@@ -2920,7 +2920,7 @@
     (property "Reference" "U11" (at 169.545 53.975 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "ADE-1L" (at 169.545 56.515 0)
+    (property "Value" "ADE-6" (at 169.545 56.515 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "RF_Mini-Circuits:Mini-Circuits_CD542_LandPatternPL-052" (at 171.45 74.93 0)

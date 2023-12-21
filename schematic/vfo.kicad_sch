@@ -894,7 +894,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 09598e56-4162-4fc2-993d-39d8607e35ea)
   )
-  (text "see /Xtal Filters/" (at 100.965 113.03 0)
+  (text "see /TX Common/" (at 100.965 113.03 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 536c7974-d197-4af7-a469-6d9482605363)
   )
