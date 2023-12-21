@@ -651,7 +651,7 @@ void displaySMeterOrMode(bool force) {
 void keyDown() {
     if(inTransmitMode) {
         // enable CH_CW
-        si5351_EnableOutputs((1 << CH_CW) | (1 << CH_VFO));
+        si5351_EnableOutputs(1 << CH_CW);
 
         // ENABLE_KEYED_VCC
         HAL_GPIO_WritePin(GPIOC, GPIO_PIN_14, GPIO_PIN_SET);
@@ -669,7 +669,7 @@ void keyUp() {
     HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
 
     // disable CH_CW
-    si5351_EnableOutputs(1 << CH_VFO);
+    si5351_EnableOutputs(0);
 }
 
 void switchLPFs(UseLPF_t lpf) { // TODO FIXME
@@ -756,10 +756,7 @@ void ensureTransmitMode() {
             targetFrequency += clarOffset;
         }
 
-        // Always transmit the carrier signal.
-        // It is keyed by keyUp() and keyDown().
-        SetupCLK(CH_CW, CWFilterCenterFrequency, bands[currentBand].txDriveStrength);
-        SetupCLK(CH_VFO, targetFrequency + CWFilterCenterFrequency, VFODriveStrength);
+        SetupCLK(CH_CW, targetFrequency, bands[currentBand].txDriveStrength);
         keyUp(); // calls si5351_EnableOutputs()
     }
 
