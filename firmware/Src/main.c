@@ -662,14 +662,17 @@ void keyDown() {
 }
 
 void keyUp() {
+    if(inTransmitMode) {
+        // disable CH_CW, but only during actual TX
+        // e.g. not during playbackSavedMessage()
+        si5351_EnableOutputs(0);
+    }
+
     // make sure ENABLE_KEYED_VCC is low regardless of inTransmitMode value
     HAL_GPIO_WritePin(GPIOC, GPIO_PIN_14, GPIO_PIN_RESET);
 
     // CW tone OFF
     HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
-
-    // disable CH_CW
-    si5351_EnableOutputs(0);
 }
 
 void switchLPFs(UseLPF_t lpf) { // TODO FIXME
