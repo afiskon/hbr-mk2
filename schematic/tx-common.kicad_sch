@@ -1637,7 +1637,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid d95d6833-51e0-4004-94de-08c36ef0f702)
   )
-  (text "10T bifilar\n@ T37-43" (at 163.195 100.33 0)
+  (text "10T bifilar\n@ FT37-43" (at 163.195 100.33 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid ec474b63-bdf8-443d-985c-f32fa5e41598)
   )
