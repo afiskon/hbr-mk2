@@ -2477,6 +2477,11 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 33e82e5f-34fd-4e97-8548-6a99553ab93e)
   )
+  (text "== General notes ==\n- HFD4/12 relay is a full equivalent of G6K-2F-Y\n- KT3142A transistor is a full equvalent of 2N2369A\n- KT3142A can be replaced with another transistor with fT >= 500 Mhz\n- ADE-6 mixers can be replaced with ADE-1, ADE-2, etc"
+    (at 176.53 27.94 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 4a96c21b-3d7a-4c98-848b-8b3234832ffd)
+  )
   (text "see /AF Amplifier/" (at 176.53 98.425 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 4ea61e8a-160f-4178-a0bb-f55f9baa4426)
@@ -5034,6 +5039,23 @@
     (instances
       (project "hbr-mk2"
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d" (page "9"))
+      )
+    )
+  )
+
+  (sheet (at 19.05 160.02) (size 18.415 8.255) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid de0046cb-e6c9-41cb-ab4a-feea0691b6df)
+    (property "Sheetname" "Power Amplifier" (at 19.05 159.3084 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "power-amplifier.kicad_sch" (at 19.05 168.8596 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "hbr-mk2"
+        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d" (page "12"))
       )
     )
   )
