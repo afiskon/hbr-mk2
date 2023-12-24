@@ -2650,7 +2650,7 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "LPF_SEL_12_10" (shape output) (at 160.655 104.775 0) (fields_autoplaced)
+  (global_label "LPF_SEL_10_12" (shape output) (at 160.655 104.775 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 44f8a0cf-5797-4fa4-a068-1612f0d246b5)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 178.0749 104.775 0)
