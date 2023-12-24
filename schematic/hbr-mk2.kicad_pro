@@ -370,6 +370,10 @@
     [
       "de0046cb-e6c9-41cb-ab4a-feea0691b6df",
       "Power Amplifier"
+    ],
+    [
+      "e132f19c-a983-4f9b-b92e-6b873142102b",
+      "LPFs"
     ]
   ],
   "text_variables": {}

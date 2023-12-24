@@ -5060,6 +5060,23 @@
     )
   )
 
+  (sheet (at 19.05 173.99) (size 18.415 8.255) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid e132f19c-a983-4f9b-b92e-6b873142102b)
+    (property "Sheetname" "LPFs" (at 19.05 173.2784 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "lpfs.kicad_sch" (at 19.05 182.8296 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "hbr-mk2"
+        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d" (page "13"))
+      )
+    )
+  )
+
   (sheet (at 19.05 75.565) (size 19.05 8.255) (fields_autoplaced)
     (stroke (width 0.1524) (type solid))
     (fill (color 0 0 0 0.0000))
