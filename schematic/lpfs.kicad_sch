@@ -2429,7 +2429,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 5d7649de-7900-4ca9-8975-8b25c83e047a)
   )
-  (text "0.40u = 10T @ T50-6\n0.26u =  8T @ T50-6\n0.28u =  8T @ T50-6"
+  (text "0.40u = 9T @ T50-6\n0.26u = 6T @ T50-6\n0.28u = 6T @ T50-6"
     (at 206.756 73.025 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 62ae25aa-9738-4f44-9cc1-51d0ad42bcb7)
@@ -2451,7 +2451,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid a5bb28b5-7f24-4174-8b7d-5da71b37909c)
   )
-  (text "0.59u = 12T @ T50-6\n0.38u = 10T @ T50-6\n0.42u = 10T @ T50-6"
+  (text "0.59u = 11T @ T50-6\n0.38u =  8T @ T50-6\n0.42u =  9T @ T50-6"
     (at 71.12 173.355 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid ac239ce4-0ae4-4bbe-8edb-461e43d4c8b6)
@@ -2489,7 +2489,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid e05427a1-0fa2-42df-a32c-4ae642dbbb4a)
   )
-  (text "0.29u = 9T @ T50-6\n0.19u = 7T @ T50-6\n0.20u = 7T @ T50-6"
+  (text "0.29u = 6T @ T50-6\n0.19u = 5T @ T50-6\n0.20u = 5T @ T50-6"
     (at 206.756 121.285 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid e0eb9d95-66bf-4f75-ba18-6771207f5bd2)
