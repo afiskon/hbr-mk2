@@ -188,11 +188,12 @@ typedef enum {
     BUTTON_STATUS_DEBOUNCE = 2,
 } ButtonStatus_t;
 
-typedef enum { // TODO FIXME: 80, 40, 30+20, 17+15, 12+10
+typedef enum {
     USE_LPF_80 = 0,
-    USE_LPF_40_30 = 1,
-    USE_LPF_20_17 = 2,
-    USE_LPF_15_12_10 = 3,
+    USE_LPF_40 = 1,
+    USE_LPF_20_30 = 2,
+    USE_LPF_15_17 = 3,
+    USE_LPF_10_12 = 4,
 } UseLPF_t;
 
 typedef enum {
@@ -235,7 +236,7 @@ BandInfo_t bands[] = {
         .minFreq  = 7000000,
         .maxFreq  = 7200000,
         .lastFreq = 7030000,
-        .lpf = USE_LPF_40_30,
+        .lpf = USE_LPF_40,
         .bpf = USE_BPF_40,
         .txDriveStrength = SI5351_DRIVE_STRENGTH_2MA,
     },
@@ -243,7 +244,7 @@ BandInfo_t bands[] = {
         .minFreq  = 10100000,
         .maxFreq  = 10150000,
         .lastFreq = 10116000,
-        .lpf = USE_LPF_40_30,
+        .lpf = USE_LPF_20_30,
         .bpf = USE_BPF_30,
         .txDriveStrength = SI5351_DRIVE_STRENGTH_2MA,
     },
@@ -251,7 +252,7 @@ BandInfo_t bands[] = {
         .minFreq  = 14000000,
         .maxFreq  = 14350000,
         .lastFreq = 14060000,
-        .lpf = USE_LPF_20_17,
+        .lpf = USE_LPF_20_30,
         .bpf = USE_BPF_20,
         .txDriveStrength = SI5351_DRIVE_STRENGTH_2MA,
     },
@@ -259,7 +260,7 @@ BandInfo_t bands[] = {
         .minFreq  = 18068000,
         .maxFreq  = 18168000,
         .lastFreq = 18086000,
-        .lpf = USE_LPF_20_17,
+        .lpf = USE_LPF_15_17,
         .bpf = USE_BPF_17,
         .txDriveStrength = SI5351_DRIVE_STRENGTH_2MA,
     },
@@ -267,7 +268,7 @@ BandInfo_t bands[] = {
         .minFreq  = 21000000,
         .maxFreq  = 21450000,
         .lastFreq = 21060000,
-        .lpf = USE_LPF_15_12_10,
+        .lpf = USE_LPF_15_17,
         .bpf = USE_BPF_15,
         .txDriveStrength = SI5351_DRIVE_STRENGTH_2MA,
     },
@@ -275,7 +276,7 @@ BandInfo_t bands[] = {
         .minFreq  = 24890000,
         .maxFreq  = 24990000,
         .lastFreq = 24906000,
-        .lpf = USE_LPF_15_12_10,
+        .lpf = USE_LPF_10_12,
         .bpf = USE_BPF_12,
         .txDriveStrength = SI5351_DRIVE_STRENGTH_4MA,
     },
@@ -283,7 +284,7 @@ BandInfo_t bands[] = {
         .minFreq  = 28000000,
         .maxFreq  = 29700000,
         .lastFreq = 28060000,
-        .lpf = USE_LPF_15_12_10,
+        .lpf = USE_LPF_10_12,
         .bpf = USE_BPF_10,
         .txDriveStrength = SI5351_DRIVE_STRENGTH_4MA,
     },
@@ -675,10 +676,11 @@ void keyUp() {
     HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
 }
 
-void switchLPFs(UseLPF_t lpf) { // TODO FIXME
-    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, lpf == USE_LPF_15_12_10 ? GPIO_PIN_SET : GPIO_PIN_RESET);
-    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, lpf == USE_LPF_20_17 ? GPIO_PIN_SET : GPIO_PIN_RESET);
-    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, lpf == USE_LPF_40_30 ? GPIO_PIN_SET : GPIO_PIN_RESET);
+void switchLPFs(UseLPF_t lpf) {
+    HAL_GPIO_WritePin(GPIOC, GPIO_PIN_15, lpf == USE_LPF_10_12 ? GPIO_PIN_SET : GPIO_PIN_RESET);
+    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, lpf == USE_LPF_15_17 ? GPIO_PIN_SET : GPIO_PIN_RESET);
+    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, lpf == USE_LPF_20_30 ? GPIO_PIN_SET : GPIO_PIN_RESET);
+    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, lpf == USE_LPF_40 ? GPIO_PIN_SET : GPIO_PIN_RESET);
     HAL_GPIO_WritePin(GPIOA, GPIO_PIN_6, lpf == USE_LPF_80 ? GPIO_PIN_SET : GPIO_PIN_RESET);
 }
 
