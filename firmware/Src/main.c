@@ -99,7 +99,7 @@ static void MX_TIM2_Init(void);
 #define CH_CAL  1
 #define CH_CW   2
 
-#define LOOP_DELAY 10
+#define LOOP_DELAY 5
 
 const int32_t CWFilterCenterFrequency = 8998300;
 const int32_t SSBFilterLowFrequency  = 8997600;
@@ -1722,7 +1722,7 @@ static void MX_I2C1_Init(void)
 
   /* USER CODE END I2C1_Init 1 */
   hi2c1.Instance = I2C1;
-  hi2c1.Init.ClockSpeed = 400000;
+  hi2c1.Init.ClockSpeed = 100000;
   hi2c1.Init.DutyCycle = I2C_DUTYCYCLE_2;
   hi2c1.Init.OwnAddress1 = 0;
   hi2c1.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
