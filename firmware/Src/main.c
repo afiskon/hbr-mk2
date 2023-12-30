@@ -99,6 +99,8 @@ static void MX_TIM2_Init(void);
 #define CH_CAL  1
 #define CH_CW   2
 
+#define LOOP_DELAY 10
+
 const int32_t CWFilterCenterFrequency = 8998300;
 const int32_t SSBFilterLowFrequency  = 8997600;
 const int32_t SSBFilterHighFrequency = 9000670;
@@ -1152,7 +1154,7 @@ void playbackSavedMessage(bool renderCounter, bool renderSWRMeter) {
             updateSWRMeter();
         }
 
-        HAL_Delay(5);
+        HAL_Delay(LOOP_DELAY);
     }
 
     keyUp();
@@ -1235,7 +1237,7 @@ void enterKeyerSaveMode() {
             prevSpaceLeft = spaceLeft;
         }
 
-        HAL_Delay(5);
+        HAL_Delay(LOOP_DELAY);
     }
 
     LCD_Goto(0, 5);
@@ -1342,7 +1344,7 @@ void loopKeyer() {
             }
         }
 
-        HAL_Delay(5);
+        HAL_Delay(LOOP_DELAY);
     }
 
     saveKeyerConfig();
@@ -1493,7 +1495,7 @@ void loopMain() {
         }
     }
 
-    HAL_Delay(5);
+    HAL_Delay(LOOP_DELAY);
 }
 
 void init() {
