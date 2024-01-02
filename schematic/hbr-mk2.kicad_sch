@@ -2457,7 +2457,7 @@
     (uuid ff5b70d1-9111-4e76-a0b0-8f421bc2c925)
   )
 
-  (text "TODO reference" (at 178.435 102.235 0)
+  (text "see /SWR Bridge/" (at 178.435 102.235 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 05a5e69c-4e16-449e-8385-0f45dff14135)
   )
@@ -4992,6 +4992,23 @@
     (instances
       (project "hbr-mk2"
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d" (page "2"))
+      )
+    )
+  )
+
+  (sheet (at 46.355 118.11) (size 18.415 8.255) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 62aaf916-b300-4b8f-9a1d-237bb74fab3c)
+    (property "Sheetname" "SWR Bridge" (at 46.355 117.3984 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "swr-bridge.kicad_sch" (at 46.355 126.9496 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "hbr-mk2"
+        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d" (page "14"))
       )
     )
   )
