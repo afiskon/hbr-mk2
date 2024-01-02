@@ -301,6 +301,15 @@ void ADC_Select_Channel(uint32_t ch) {
     if (HAL_ADC_ConfigChannel(&hadc1, &conf) != HAL_OK) {
         Error_Handler();
     }
+
+    /*
+     * Without this delay the next call of ADC_ReadVoltage()
+     * may get a value from the previously used channel.
+     * As a result updateSWRMeter() will see equal v_fwd
+     * and v_ref, which results in a false high SWR value.
+     * So keep the delay!
+     */
+    HAL_Delay(1);
 } 
 
 double ADC_ReadVoltage(uint32_t ch) {
@@ -1058,14 +1067,14 @@ void updateSWRMeter() {
     }
 
     v_fwd = ADC_ReadVoltage(ADC_CHANNEL_0);
-    if(v_fwd <= 0.1) {
+    if(v_fwd <= 0.2) {
         /* not transmitting */
         return;
     }
 
     lastSWRCheckTime = tstamp;
     v_ref = ADC_ReadVoltage(ADC_CHANNEL_1);
-    if(v_ref <= 0.1) {
+    if(v_ref <= 0.2) {
         v_ref = 0.0;
     }
 
