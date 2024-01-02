@@ -1058,21 +1058,30 @@ void updateSWRMeter() {
     }
 
     v_fwd = ADC_ReadVoltage(ADC_CHANNEL_0);
-    if(v_fwd <= 0 ) {
+    if(v_fwd <= 0.1) {
+        /* not transmitting */
         return;
     }
 
     lastSWRCheckTime = tstamp;
     v_ref = ADC_ReadVoltage(ADC_CHANNEL_1);
-    ratio = v_ref / v_fwd;
-    swr = (1+ratio)/(1-ratio);
+    if(v_ref <= 0.1) {
+        v_ref = 0.0;
+    }
 
-    if(fabs(lastSWRValue - swr) <= 0.2) {
+    if(v_ref > v_fwd) {
+        swr = 25.0;
+    } else {
+        ratio = v_ref / v_fwd;
+        swr = (1+ratio)/(1-ratio);
+    }
+
+    if(fabs(lastSWRValue - swr) <= 0.1) {
         return;
     }
 
     LCD_Goto(1, 5);
-    if(swr >= 10) {
+    if(swr >= 10.0) {
         LCD_SendString("10+");
     } else {
         char buff[8];
