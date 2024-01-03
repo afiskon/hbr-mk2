@@ -1397,7 +1397,9 @@ void loopMain() {
     } else {
         // exit TX mode due to inactivity?
         uint32_t tstamp = HAL_GetTick();
-        if((tstamp - transmitModeEnterTime > keyerConfig.ditTimeMs*15) && (inTransmitMode)) {
+        uint32_t delay = keyerConfig.straightKey ? 1000 : keyerConfig.ditTimeMs*15;
+
+        if((tstamp - transmitModeEnterTime > delay) && (inTransmitMode)) {
             ensureReceiveMode();
             // discard any changes in counters
             (void)getDelta(&htim1, &prevMainCounter, MAIN_DELTA_MULT, MAIN_DELTA_DIV);
