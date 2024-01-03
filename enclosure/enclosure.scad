@@ -141,16 +141,6 @@ module front_back_base() {
             translate([0, 0, (t-screw2_height)/2+eps])
                 cylinder(d = screw2_dia, h = screw2_height+eps, $fn = 25, center = true);
         }
-        translate([-Front_W/2+screw_offset+screw_extra_offset, 0, 0]) {
-            cylinder(d = screw_dia, h = t*2, $fn = 25, center = true);
-            translate([0, 0, (t-screw2_height)/2+eps])
-                cylinder(d = screw2_dia, h = screw2_height+eps, $fn = 25, center = true);
-        }
-        translate([Front_W/2-screw_offset-screw_extra_offset, 0, 0]) {
-            cylinder(d = screw_dia, h = t*2, $fn = 25, center = true);
-            translate([0, 0, (t-screw2_height)/2+eps])
-                cylinder(d = screw2_dia, h = screw2_height+eps, $fn = 25, center = true);
-        }
         translate([Front_W/2-screw_offset, 0, 0]) {
             cylinder(d = screw_dia, h = t*2, $fn = 25, center = true);
             translate([0, 0, (t-screw2_height)/2+eps])
@@ -171,7 +161,7 @@ module front() {
                 cylinder(d = toggle_dia, h = t*2, $fn = 50, center = true);
         }
         
-        // CLAR and RIT/XIT
+        // MODE and CLAR
         translate([72, 20, 0]) {
             cylinder(d = multi_enc_dia, h = t*2, $fn = 50, center = true);
             translate([-30, 0, 0])
@@ -241,7 +231,7 @@ module front() {
             }
         }
         
-        // Buttons and toggles
+        // Buttons
         translate([55, -18, 0]) {
             translate([-button_offset, -button_offset/2, 0]) {
                 cylinder(d = button_dia, h = t*2, $fn = 50, center = true);
@@ -544,7 +534,6 @@ module top() {
         }
     }
 }
-
 
 rotate([90, 0, 0]) translate([0, 0, W/2]) {
     front();
