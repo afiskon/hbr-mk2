@@ -1503,19 +1503,11 @@ void loopMain() {
                 (void)getDelta(&htim1, &prevMainCounter, MAIN_DELTA_MULT, MAIN_DELTA_DIV);
                 (void)getDelta(&htim2, &prevClarCounter, CLAR_DELTA_MULT, CLAR_DELTA_DIV);
             } else if((buttonXmitPressed() == BUTTON_STATUS_PRESSED) && (!enabledSSBMode())) {
-                /*
-                 * In SSB mode XMIT button _could_ work as TUNE,
-                 * however currently it doesn't work because SSB_12V
-                 * bus is powered off in SSB mode.
-                 *
-                 * TODO Consider using one of ENABLE_RX_12V / ENABLE_TX_12V pins.
-                 *      This however requires changes in the schematic and some
-                 *      experimentation.
-                 */
+                /* Send saved message */
+
                 ensureTransmitMode();
                 resetSWRMeter();
 
-                /* In CW mode XMIT button sends saved message */
                 if(keyerConfig.straightKey) {
                     initStraightKeyer();
                 } else {
