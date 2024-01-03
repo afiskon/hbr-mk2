@@ -182,6 +182,7 @@ KeyerMessage_t keyerMessage = {
 };
 
 bool inTransmitMode = false;
+bool transmittingSSB = false;
 
 #define BUTTON_DEBOUNCE_TIME_MS 200
 typedef enum {
@@ -760,7 +761,7 @@ void ensureTransmitMode() {
         return;
     }
 
-    if(enabledSSBMode()) {
+    if(transmittingSSB) {
         // changes VFO frequency accordingly
         changeFrequency(0, true, true);
 
@@ -1047,7 +1048,8 @@ bool anyButtonPressed() {
         (buttonXmitPressed() == BUTTON_STATUS_PRESSED) ||
         (buttonKeyerPressed() == BUTTON_STATUS_PRESSED) ||
         (buttonClarPressed() == BUTTON_STATUS_PRESSED) ||
-        buttonDitPressed() || buttonDahPressed();
+        buttonDitPressed() || buttonDahPressed() ||
+        (transmittingSSB != enabledSSBMode());
 }
 
 
@@ -1109,6 +1111,9 @@ void playbackSavedMessage(bool renderCounter, bool renderSWRMeter) {
     size_t symbolsLeft = keyerMessage.length;
     size_t currentSymbolIdx = 0;
     char c;
+
+    /* This ensures that anyButtonPressed() will work properly */
+    transmittingSSB = false;
 
     if(renderCounter) {
         char buff[16];
@@ -1374,14 +1379,13 @@ void loopMain() {
     static int32_t prevMainCounter = 0;
     static int32_t prevClarCounter = 0;
     static uint32_t transmitModeEnterTime = 0;
-    static bool transmittingSSB = false;
     bool ditPressed = buttonDitPressed();
     bool dahPressed = buttonDahPressed();
 
     if(ditPressed || dahPressed) {
         transmitModeEnterTime = HAL_GetTick();
         if(!inTransmitMode) {
-            // enter transmit mode
+            /* enter transmit mode */
             transmittingSSB = enabledSSBMode();
             ensureTransmitMode();
             resetSWRMeter();
@@ -1395,28 +1399,39 @@ void loopMain() {
             }
         }
     } else {
-        // exit TX mode due to inactivity?
+        /* exit TX mode due to inactivity? */
         uint32_t tstamp = HAL_GetTick();
         uint32_t delay = keyerConfig.straightKey ? 1000 : keyerConfig.ditTimeMs*15;
 
         if((tstamp - transmitModeEnterTime > delay) && (inTransmitMode)) {
             ensureReceiveMode();
-            // discard any changes in counters
+            /* discard any changes in counters */
             (void)getDelta(&htim1, &prevMainCounter, MAIN_DELTA_MULT, MAIN_DELTA_DIV);
             (void)getDelta(&htim2, &prevClarCounter, CLAR_DELTA_MULT, CLAR_DELTA_DIV);
         }
     }
 
     if(inTransmitMode) {
-        if(!transmittingSSB) {
-            if(keyerConfig.straightKey) {
-                processStraightKeyerLogic(ditPressed);
-            } else {
-                processIambicKeyerLogic(ditPressed, dahPressed);
+        if(transmittingSSB != enabledSSBMode()) {
+            /*
+             * Mode has changed while transmitting,
+             * entering RX mode.
+             */
+            ensureReceiveMode();
+            /* discard any changes in counters */
+            (void)getDelta(&htim1, &prevMainCounter, MAIN_DELTA_MULT, MAIN_DELTA_DIV);
+            (void)getDelta(&htim2, &prevClarCounter, CLAR_DELTA_MULT, CLAR_DELTA_DIV);
+        } else {
+            if(!transmittingSSB) {
+                if(keyerConfig.straightKey) {
+                    processStraightKeyerLogic(ditPressed);
+                } else {
+                    processIambicKeyerLogic(ditPressed, dahPressed);
+                }
             }
-        }
 
-        updateSWRMeter();
+            updateSWRMeter();
+        }
     } else {
         /* do it only in RX mode */
         checkIfRxModeHasChanged();
@@ -1487,26 +1502,31 @@ void loopMain() {
                 // discard any changes in counters
                 (void)getDelta(&htim1, &prevMainCounter, MAIN_DELTA_MULT, MAIN_DELTA_DIV);
                 (void)getDelta(&htim2, &prevClarCounter, CLAR_DELTA_MULT, CLAR_DELTA_DIV);
-
+            } else if((buttonXmitPressed() == BUTTON_STATUS_PRESSED) && (!enabledSSBMode())) {
                 /*
-                if(startSendingSavedMessage) { // TODO FIXME - use XMIT button instead
-                    // process XMIT MSG
-                    ensureTransmitMode();
-                    resetSWRMeter();
+                 * In SSB mode XMIT button _could_ work as TUNE,
+                 * however currently it doesn't work because SSB_12V
+                 * bus is powered off in SSB mode.
+                 *
+                 * TODO Consider using one of ENABLE_RX_12V / ENABLE_TX_12V pins.
+                 *      This however requires changes in the schematic and some
+                 *      experimentation.
+                 */
+                ensureTransmitMode();
+                resetSWRMeter();
 
-                    if(keyerConfig.straightKey) {
-                        initStraightKeyer();
-                    } else {
-                        initIambicKeyer();
-                    }
-
-                    playbackSavedMessage(false, true);
-                    transmitModeEnterTime = HAL_GetTick();
-
-                    // loopMain() will be called again from the main loop
-                    return; 
+                /* In CW mode XMIT button sends saved message */
+                if(keyerConfig.straightKey) {
+                    initStraightKeyer();
+                } else {
+                    initIambicKeyer();
                 }
-                */
+                playbackSavedMessage(false, true);
+
+                transmitModeEnterTime = HAL_GetTick();
+
+                /* loopMain() will be called again from the main loop */
+                return;
             }
         }
 
