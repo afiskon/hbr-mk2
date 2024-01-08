@@ -1069,14 +1069,14 @@ void updateSWRMeter() {
     }
 
     v_fwd = ADC_ReadVoltage(ADC_CHANNEL_0);
-    if(v_fwd <= 0.2) {
+    if(v_fwd < 0.1) {
         /* not transmitting */
         return;
     }
 
     lastSWRCheckTime = tstamp;
     v_ref = ADC_ReadVoltage(ADC_CHANNEL_1);
-    if(v_ref <= 0.2) {
+    if(v_ref < 0.1) {
         v_ref = 0.0;
     }
 
@@ -1087,7 +1087,7 @@ void updateSWRMeter() {
         swr = (1+ratio)/(1-ratio);
     }
 
-    if(fabs(lastSWRValue - swr) <= 0.1) {
+    if(fabs(lastSWRValue - swr) <= 0.2) {
         return;
     }
 
