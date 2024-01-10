@@ -1425,7 +1425,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 2a12aef9-2ad5-402b-8f23-f32049f7923e)
   )
-  (text "FIXME reference" (at 269.24 116.84 0)
+  (text "see /TX SSB/" (at 269.24 116.84 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 32478311-cf04-4fc1-86a8-6f57fc77b1da)
   )
