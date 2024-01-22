@@ -2702,7 +2702,7 @@
   (symbol (lib_id "Relay:G2RL-2-ASI-DC5") (at 90.17 165.735 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0dd81752-8a4b-44df-9de4-16a814bb0df6)
-    (property "Reference" "RL3" (at 92.075 145.415 90)
+    (property "Reference" "RL27" (at 92.075 145.415 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "HFD4/12" (at 93.98 148.59 90)
@@ -2724,15 +2724,6 @@
     (pin "8" (uuid d022ae7c-47ec-4af6-886a-6ded5235f1a4))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/f830f485-dae1-49b8-8b15-2f9b2d30db58"
-          (reference "RL3") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/4a33e42c-b3be-4c3a-afde-bb63d1cdac9b"
-          (reference "RL26") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/86d9728c-6234-48b6-9832-cb64f716a194"
-          (reference "RL27") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/de0046cb-e6c9-41cb-ab4a-feea0691b6df"
           (reference "RL27") (unit 1)
         )
@@ -2769,7 +2760,7 @@
   (symbol (lib_id "Diode:1N4148") (at 90.17 140.97 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 150b0b4d-8db3-4163-9eb3-3561ccc117e5)
-    (property "Reference" "D22" (at 90.17 135.255 0)
+    (property "Reference" "D23" (at 90.17 135.255 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1N4148" (at 90.17 137.795 0)
@@ -2791,12 +2782,6 @@
     (pin "2" (uuid 93059493-d18a-4fff-b080-2e756e944df6))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/4a33e42c-b3be-4c3a-afde-bb63d1cdac9b"
-          (reference "D22") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/86d9728c-6234-48b6-9832-cb64f716a194"
-          (reference "D23") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/de0046cb-e6c9-41cb-ab4a-feea0691b6df"
           (reference "D23") (unit 1)
         )
@@ -2833,7 +2818,7 @@
   (symbol (lib_id "Relay:G2RL-2-ASI-DC5") (at 44.45 165.735 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1f175393-8a73-4dab-90e3-ac126197ea00)
-    (property "Reference" "RL3" (at 42.545 145.415 90)
+    (property "Reference" "RL28" (at 42.545 145.415 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "HFD4/12" (at 40.64 148.59 90)
@@ -2855,15 +2840,6 @@
     (pin "8" (uuid 151f13ba-8051-4d45-ab8d-970901fc31ab))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/f830f485-dae1-49b8-8b15-2f9b2d30db58"
-          (reference "RL3") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/4a33e42c-b3be-4c3a-afde-bb63d1cdac9b"
-          (reference "RL26") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/86d9728c-6234-48b6-9832-cb64f716a194"
-          (reference "RL27") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/de0046cb-e6c9-41cb-ab4a-feea0691b6df"
           (reference "RL28") (unit 1)
         )
@@ -3044,9 +3020,6 @@
     (pin "2" (uuid d402db16-6275-4e8b-8413-dbac02207d53))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d"
-          (reference "C151") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/de0046cb-e6c9-41cb-ab4a-feea0691b6df"
           (reference "C151") (unit 1)
         )
@@ -3169,7 +3142,7 @@
   (symbol (lib_id "Device:Q_NPN_BEC") (at 124.46 56.515 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3a94f578-38ab-4433-93e7-c5fb77c21559)
-    (property "Reference" "Q18" (at 130.175 55.245 0)
+    (property "Reference" "Q23" (at 130.175 55.245 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "KT3142A" (at 130.175 57.785 0)
@@ -3186,9 +3159,6 @@
     (pin "3" (uuid 955eebed-2744-4b37-9e5c-fd49f149eb78))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/86d9728c-6234-48b6-9832-cb64f716a194"
-          (reference "Q18") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/de0046cb-e6c9-41cb-ab4a-feea0691b6df"
           (reference "Q23") (unit 1)
         )
@@ -3300,7 +3270,7 @@
   (symbol (lib_id "power:GND") (at 99.695 158.115 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 48793223-ba24-4f92-86ff-dc7ba0a862b3)
-    (property "Reference" "#PWR0125" (at 99.695 164.465 0)
+    (property "Reference" "#PWR0124" (at 99.695 164.465 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 99.695 163.195 0)
@@ -3315,12 +3285,6 @@
     (pin "1" (uuid 199b3e87-f67a-44f2-abcb-cd2135f6ab6f))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/4a33e42c-b3be-4c3a-afde-bb63d1cdac9b"
-          (reference "#PWR0125") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/86d9728c-6234-48b6-9832-cb64f716a194"
-          (reference "#PWR0127") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/de0046cb-e6c9-41cb-ab4a-feea0691b6df"
           (reference "#PWR0124") (unit 1)
         )
@@ -3529,9 +3493,6 @@
     (pin "3" (uuid 4830ef52-98eb-4c6f-a6c6-dd58c606f4a4))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d"
-          (reference "U18") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/de0046cb-e6c9-41cb-ab4a-feea0691b6df"
           (reference "U18") (unit 1)
         )
@@ -3608,9 +3569,6 @@
     (pin "1" (uuid 2f6d9c80-0ea3-4c0f-88e7-1ad23aabf920))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d"
-          (reference "#PWR0145") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/de0046cb-e6c9-41cb-ab4a-feea0691b6df"
           (reference "#PWR0145") (unit 1)
         )
@@ -3647,7 +3605,7 @@
   (symbol (lib_id "Device:Q_NPN_BEC") (at 59.69 82.55 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 77f0858d-15a9-4ec0-866d-465ef77abe50)
-    (property "Reference" "Q18" (at 65.405 81.28 0)
+    (property "Reference" "Q20" (at 65.405 81.28 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "KT3142A" (at 65.405 83.82 0)
@@ -3664,9 +3622,6 @@
     (pin "3" (uuid f08218ff-0a0d-4ed6-a756-452e9d252022))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/86d9728c-6234-48b6-9832-cb64f716a194"
-          (reference "Q18") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/de0046cb-e6c9-41cb-ab4a-feea0691b6df"
           (reference "Q20") (unit 1)
         )
@@ -3729,7 +3684,7 @@
   (symbol (lib_id "Device:Q_NPN_BEC") (at 144.145 96.52 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8928e1d7-2f74-42e0-b6e5-43f6aa207521)
-    (property "Reference" "Q18" (at 149.86 95.25 0)
+    (property "Reference" "Q22" (at 149.86 95.25 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "KT3142A" (at 149.86 97.79 0)
@@ -3746,9 +3701,6 @@
     (pin "3" (uuid 128e7342-f22b-4651-a9ca-ad895f4a5df7))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/86d9728c-6234-48b6-9832-cb64f716a194"
-          (reference "Q18") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/de0046cb-e6c9-41cb-ab4a-feea0691b6df"
           (reference "Q22") (unit 1)
         )
@@ -3775,9 +3727,6 @@
     (pin "2" (uuid 0933cfba-d13a-401c-8299-725be5f79a5b))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d"
-          (reference "C149") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/de0046cb-e6c9-41cb-ab4a-feea0691b6df"
           (reference "C149") (unit 1)
         )
@@ -3829,9 +3778,6 @@
     (pin "1" (uuid 0c4d69ac-0f8e-4d39-850f-024879124925))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d"
-          (reference "#PWR0147") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/de0046cb-e6c9-41cb-ab4a-feea0691b6df"
           (reference "#PWR0147") (unit 1)
         )
@@ -4012,9 +3958,6 @@
     (pin "3" (uuid 60383c40-e97b-4004-9341-49fa0339129d))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/86d9728c-6234-48b6-9832-cb64f716a194"
-          (reference "Q18") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/de0046cb-e6c9-41cb-ab4a-feea0691b6df"
           (reference "Q18") (unit 1)
         )
@@ -4052,7 +3995,7 @@
   (symbol (lib_id "power:GND") (at 34.925 158.115 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ac9e9386-6638-49a5-8387-760235168a20)
-    (property "Reference" "#PWR0125" (at 34.925 164.465 0)
+    (property "Reference" "#PWR0127" (at 34.925 164.465 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 34.925 163.195 0)
@@ -4067,12 +4010,6 @@
     (pin "1" (uuid e6b2a65d-7b05-40b3-a6c5-c7a214a14983))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/4a33e42c-b3be-4c3a-afde-bb63d1cdac9b"
-          (reference "#PWR0125") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/86d9728c-6234-48b6-9832-cb64f716a194"
-          (reference "#PWR0127") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/de0046cb-e6c9-41cb-ab4a-feea0691b6df"
           (reference "#PWR0127") (unit 1)
         )
@@ -4083,7 +4020,7 @@
   (symbol (lib_id "Diode:1N4148") (at 44.45 140.97 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid af898124-a55a-48d3-820a-338d31ce93ba)
-    (property "Reference" "D22" (at 44.45 135.255 0)
+    (property "Reference" "D24" (at 44.45 135.255 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1N4148" (at 44.45 137.795 0)
@@ -4105,12 +4042,6 @@
     (pin "2" (uuid a285052f-1a4c-43e6-8eae-5fd71bb4113d))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/4a33e42c-b3be-4c3a-afde-bb63d1cdac9b"
-          (reference "D22") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/86d9728c-6234-48b6-9832-cb64f716a194"
-          (reference "D23") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/de0046cb-e6c9-41cb-ab4a-feea0691b6df"
           (reference "D24") (unit 1)
         )
@@ -4186,9 +4117,6 @@
     (pin "1" (uuid f0d90a8c-3005-4ab5-8236-70aee076b301))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d"
-          (reference "#PWR0143") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/de0046cb-e6c9-41cb-ab4a-feea0691b6df"
           (reference "#PWR0143") (unit 1)
         )
@@ -4199,7 +4127,7 @@
   (symbol (lib_id "Device:L_Ferrite_Coupled_1423") (at 266.7 72.39 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b70dc096-695b-425b-b4e7-e1b5d9b72af4)
-    (property "Reference" "L12" (at 268.605 65.405 90)
+    (property "Reference" "L35" (at 268.605 65.405 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "FT50-43" (at 263.525 73.406 90)
@@ -4217,18 +4145,6 @@
     (pin "4" (uuid 7cadef92-c527-4403-9855-2f99439bb985))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/0b45878c-17b8-4be8-9884-0f2bddd34788"
-          (reference "L12") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/4a33e42c-b3be-4c3a-afde-bb63d1cdac9b"
-          (reference "L14") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/510b993f-d652-41da-8b0c-b7668be8d7c3"
-          (reference "L32") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/86d9728c-6234-48b6-9832-cb64f716a194"
-          (reference "L35") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/de0046cb-e6c9-41cb-ab4a-feea0691b6df"
           (reference "L35") (unit 1)
         )
@@ -4523,7 +4439,7 @@
   (symbol (lib_id "Device:Q_NPN_BEC") (at 124.46 96.52 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid df9d4d6e-342e-485f-8474-e04a897e46fa)
-    (property "Reference" "Q18" (at 130.175 95.25 0)
+    (property "Reference" "Q21" (at 130.175 95.25 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "KT3142A" (at 130.175 97.79 0)
@@ -4540,9 +4456,6 @@
     (pin "3" (uuid be048b9e-5b61-43f4-a23c-cb2cf1c6db7c))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/86d9728c-6234-48b6-9832-cb64f716a194"
-          (reference "Q18") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/de0046cb-e6c9-41cb-ab4a-feea0691b6df"
           (reference "Q21") (unit 1)
         )
@@ -4553,7 +4466,7 @@
   (symbol (lib_id "Device:Q_NPN_BEC") (at 144.145 56.515 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e4c1f5a5-0c34-4a20-8855-ef54add3a789)
-    (property "Reference" "Q18" (at 149.86 55.245 0)
+    (property "Reference" "Q24" (at 149.86 55.245 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "KT3142A" (at 149.86 57.785 0)
@@ -4570,9 +4483,6 @@
     (pin "3" (uuid 75d1d94f-5625-44dd-92bc-d4858c0a6851))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/86d9728c-6234-48b6-9832-cb64f716a194"
-          (reference "Q18") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/de0046cb-e6c9-41cb-ab4a-feea0691b6df"
           (reference "Q24") (unit 1)
         )

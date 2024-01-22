@@ -1982,7 +1982,7 @@
   (symbol (lib_id "power:+8V") (at 97.155 109.22 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1e13687f-2bf1-4698-92d9-da1576c60342)
-    (property "Reference" "#PWR0240" (at 97.155 113.03 0)
+    (property "Reference" "#PWR0223" (at 97.155 113.03 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+8V" (at 97.155 104.775 0)
@@ -1997,9 +1997,6 @@
     (pin "1" (uuid cbc8b075-0a5f-4123-94ca-411da3bf9c16))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/53c64ec8-e682-4447-a686-92e02593189c"
-          (reference "#PWR0240") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/56e6206b-9eaf-48e3-8e65-5aed78d22a1d"
           (reference "#PWR0223") (unit 1)
         )
@@ -3080,7 +3077,7 @@
   (symbol (lib_id "power:+8V") (at 52.07 144.78 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8fcef7ab-b9af-4471-9dbb-379695b384e1)
-    (property "Reference" "#PWR0240" (at 52.07 148.59 0)
+    (property "Reference" "#PWR0220" (at 52.07 148.59 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+8V" (at 52.07 140.335 0)
@@ -3095,9 +3092,6 @@
     (pin "1" (uuid e2aa07ed-d065-430b-adb3-87dc3c37b69f))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/53c64ec8-e682-4447-a686-92e02593189c"
-          (reference "#PWR0240") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/56e6206b-9eaf-48e3-8e65-5aed78d22a1d"
           (reference "#PWR0220") (unit 1)
         )

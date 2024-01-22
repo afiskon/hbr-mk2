@@ -1687,9 +1687,6 @@
     (pin "8" (uuid 67de902e-cc2b-43e7-9389-7704ba2c21ce))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/f830f485-dae1-49b8-8b15-2f9b2d30db58"
-          (reference "RL3") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/4a33e42c-b3be-4c3a-afde-bb63d1cdac9b"
           (reference "RL3") (unit 1)
         )
@@ -1834,7 +1831,7 @@
   (symbol (lib_id "Relay:G2RL-2-ASI-DC5") (at 231.14 109.855 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1c6d194e-abb1-459f-8386-b1ffe778353a)
-    (property "Reference" "RL3" (at 233.045 89.535 90)
+    (property "Reference" "RL4" (at 233.045 89.535 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "HFD4/12" (at 234.95 92.71 90)
@@ -1856,9 +1853,6 @@
     (pin "8" (uuid 06abac86-85a4-44dd-b34c-1e6202db2a29))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/f830f485-dae1-49b8-8b15-2f9b2d30db58"
-          (reference "RL3") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/4a33e42c-b3be-4c3a-afde-bb63d1cdac9b"
           (reference "RL4") (unit 1)
         )
@@ -2100,7 +2094,7 @@
   (symbol (lib_id "Device:L_Ferrite_Coupled_1423") (at 206.375 117.475 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4bed569f-b500-4d56-863e-9f9e8307d5e7)
-    (property "Reference" "L12" (at 207.645 110.49 90)
+    (property "Reference" "L13" (at 207.645 110.49 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "FT37-43" (at 203.2 118.491 90)
@@ -2118,9 +2112,6 @@
     (pin "4" (uuid 4d4f31eb-5367-4f70-a485-5e3072e901b5))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/0b45878c-17b8-4be8-9884-0f2bddd34788"
-          (reference "L12") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/4a33e42c-b3be-4c3a-afde-bb63d1cdac9b"
           (reference "L13") (unit 1)
         )
@@ -2623,9 +2614,6 @@
     (pin "4" (uuid 2597ba36-4b4b-4d60-993c-53044ed5ae96))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/0b45878c-17b8-4be8-9884-0f2bddd34788"
-          (reference "L12") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/4a33e42c-b3be-4c3a-afde-bb63d1cdac9b"
           (reference "L12") (unit 1)
         )
@@ -2688,7 +2676,7 @@
   (symbol (lib_id "Relay:G2RL-2-ASI-DC5") (at 258.445 109.855 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b25fa65a-6236-4acb-9dc2-b820089d7fee)
-    (property "Reference" "RL3" (at 256.54 89.535 90)
+    (property "Reference" "RL6" (at 256.54 89.535 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "HFD4/12" (at 254.635 92.71 90)
@@ -2710,9 +2698,6 @@
     (pin "8" (uuid a27bcd2e-57e3-4300-840b-c6ddde5a07e4))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/f830f485-dae1-49b8-8b15-2f9b2d30db58"
-          (reference "RL3") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/4a33e42c-b3be-4c3a-afde-bb63d1cdac9b"
           (reference "RL6") (unit 1)
         )
@@ -2849,7 +2834,7 @@
   (symbol (lib_id "Relay:G2RL-2-ASI-DC5") (at 41.91 109.855 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ce7bad97-b17b-4b31-a429-aed61966a227)
-    (property "Reference" "RL3" (at 43.815 89.535 90)
+    (property "Reference" "RL5" (at 43.815 89.535 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "HFD4/12" (at 45.72 92.71 90)
@@ -2871,9 +2856,6 @@
     (pin "8" (uuid 8025a4c1-2591-457b-bdd7-c4aeec3f85f4))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/f830f485-dae1-49b8-8b15-2f9b2d30db58"
-          (reference "RL3") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/4a33e42c-b3be-4c3a-afde-bb63d1cdac9b"
           (reference "RL5") (unit 1)
         )

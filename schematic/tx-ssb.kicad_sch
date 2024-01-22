@@ -1393,7 +1393,7 @@
   (symbol (lib_id "power:GND") (at 90.805 107.95 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 01b73625-7f5b-4108-9bb5-f7d58262860c)
-    (property "Reference" "#PWR0225" (at 90.805 114.3 0)
+    (property "Reference" "#PWR0316" (at 90.805 114.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 90.805 113.03 0)
@@ -1408,9 +1408,6 @@
     (pin "1" (uuid 30e05b09-0fc6-46cc-ac03-7d63e8943113))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/56e6206b-9eaf-48e3-8e65-5aed78d22a1d"
-          (reference "#PWR0225") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "#PWR0316") (unit 1)
         )
@@ -1421,7 +1418,7 @@
   (symbol (lib_id "Device:C") (at 56.515 147.955 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 14f3224a-afac-426e-9772-8fb13d834488)
-    (property "Reference" "C130" (at 59.69 146.685 0)
+    (property "Reference" "C222" (at 59.69 146.685 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0.1u" (at 59.69 149.225 0)
@@ -1437,9 +1434,6 @@
     (pin "2" (uuid 9a6e4547-8a87-4763-9178-ab4fec2d616f))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/56e6206b-9eaf-48e3-8e65-5aed78d22a1d"
-          (reference "C130") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "C222") (unit 1)
         )
@@ -1450,7 +1444,7 @@
   (symbol (lib_id "power:GND") (at 225.425 128.27 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 155dd1d8-03c9-4fa7-be26-3c0b257089e9)
-    (property "Reference" "#PWR0130" (at 225.425 134.62 0)
+    (property "Reference" "#PWR0305" (at 225.425 134.62 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 225.425 133.35 0)
@@ -1465,12 +1459,6 @@
     (pin "1" (uuid e7436e10-040c-499f-8353-e6d1aea35026))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/0b45878c-17b8-4be8-9884-0f2bddd34788"
-          (reference "#PWR0130") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/510b993f-d652-41da-8b0c-b7668be8d7c3"
-          (reference "#PWR0135") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "#PWR0305") (unit 1)
         )
@@ -1481,7 +1469,7 @@
   (symbol (lib_id "power:GND") (at 238.76 78.105 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 15859596-a0a8-460c-a340-641f26dda6cb)
-    (property "Reference" "#PWR0132" (at 238.76 84.455 0)
+    (property "Reference" "#PWR0306" (at 238.76 84.455 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 238.76 83.185 0)
@@ -1496,12 +1484,6 @@
     (pin "1" (uuid 33899489-b558-44cf-b1d1-f0b63f9b08db))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/0b45878c-17b8-4be8-9884-0f2bddd34788"
-          (reference "#PWR0132") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/510b993f-d652-41da-8b0c-b7668be8d7c3"
-          (reference "#PWR0136") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "#PWR0306") (unit 1)
         )
@@ -1512,7 +1494,7 @@
   (symbol (lib_id "power:GND") (at 45.72 156.21 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 19925d56-f667-4252-97ff-75c67828d61a)
-    (property "Reference" "#PWR0224" (at 45.72 162.56 0)
+    (property "Reference" "#PWR0312" (at 45.72 162.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 45.72 161.29 0)
@@ -1527,9 +1509,6 @@
     (pin "1" (uuid a76d55f8-9d17-41da-a48a-ab645760932b))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/56e6206b-9eaf-48e3-8e65-5aed78d22a1d"
-          (reference "#PWR0224") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "#PWR0312") (unit 1)
         )
@@ -1540,7 +1519,7 @@
   (symbol (lib_id "Device:R") (at 45.72 132.08 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1baad452-8941-4617-a636-c19a766e2200)
-    (property "Reference" "R77" (at 47.625 130.81 0)
+    (property "Reference" "R145" (at 47.625 130.81 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10K" (at 47.625 133.35 0)
@@ -1556,9 +1535,6 @@
     (pin "2" (uuid 8d6e5b02-5767-48a8-9c37-fe1f7f34107f))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/56e6206b-9eaf-48e3-8e65-5aed78d22a1d"
-          (reference "R77") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "R145") (unit 1)
         )
@@ -1569,7 +1545,7 @@
   (symbol (lib_id "Amplifier_Operational:NE5532") (at 81.28 142.24 0) (unit 3)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1d101268-d708-4ea8-99ca-beb75e89fbec)
-    (property "Reference" "U15" (at 79.375 142.24 0)
+    (property "Reference" "U20" (at 79.375 142.24 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "NE5532" (at 79.375 143.51 0)
@@ -1591,9 +1567,6 @@
     (pin "8" (uuid 649a6656-93ae-426a-8e7d-143460b2f443))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/56e6206b-9eaf-48e3-8e65-5aed78d22a1d"
-          (reference "U15") (unit 3)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "U20") (unit 3)
         )
@@ -1604,7 +1577,7 @@
   (symbol (lib_id "power:GND") (at 34.29 137.16 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1e9c54a8-765d-4a88-97d8-6a0607a64477)
-    (property "Reference" "#PWR0219" (at 34.29 143.51 0)
+    (property "Reference" "#PWR0310" (at 34.29 143.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 34.29 142.24 0)
@@ -1619,9 +1592,6 @@
     (pin "1" (uuid 45294180-f115-4d93-b20b-1ffb62152150))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/56e6206b-9eaf-48e3-8e65-5aed78d22a1d"
-          (reference "#PWR0219") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "#PWR0310") (unit 1)
         )
@@ -1632,7 +1602,7 @@
   (symbol (lib_id "power:GND") (at 21.59 137.16 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2195213f-2f94-4b24-a6f2-67bfb190d0a1)
-    (property "Reference" "#PWR0240" (at 21.59 143.51 0)
+    (property "Reference" "#PWR0309" (at 21.59 143.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 21.59 142.24 0)
@@ -1647,9 +1617,6 @@
     (pin "1" (uuid db3a4021-b05c-41a1-9fab-73014313bfd6))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/56e6206b-9eaf-48e3-8e65-5aed78d22a1d"
-          (reference "#PWR0240") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "#PWR0309") (unit 1)
         )
@@ -1660,7 +1627,7 @@
   (symbol (lib_id "Device:R") (at 90.805 82.55 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 27f83495-7e93-4c6b-9b85-557897f96740)
-    (property "Reference" "R78" (at 92.71 81.28 0)
+    (property "Reference" "R147" (at 92.71 81.28 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10K" (at 92.71 83.82 0)
@@ -1676,9 +1643,6 @@
     (pin "2" (uuid 602fae43-7879-45a1-825e-2097d26c9ad0))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/56e6206b-9eaf-48e3-8e65-5aed78d22a1d"
-          (reference "R78") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "R147") (unit 1)
         )
@@ -1715,7 +1679,7 @@
   (symbol (lib_id "Device:C") (at 32.385 80.645 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 322fe8da-fe72-48c5-b398-a8d578eb82a7)
-    (property "Reference" "C113" (at 35.56 79.375 0)
+    (property "Reference" "C227" (at 35.56 79.375 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0.1u" (at 35.56 81.915 0)
@@ -1731,9 +1695,6 @@
     (pin "2" (uuid 4463ab9e-1c10-4e7c-95d9-044bf172733f))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/56e6206b-9eaf-48e3-8e65-5aed78d22a1d"
-          (reference "C113") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "C227") (unit 1)
         )
@@ -1744,7 +1705,7 @@
   (symbol (lib_id "Device:R") (at 204.47 106.045 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3c66dc15-85e6-406a-b1ee-b01591d51ea5)
-    (property "Reference" "R59" (at 206.375 104.775 0)
+    (property "Reference" "R137" (at 206.375 104.775 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1K" (at 206.375 107.315 0)
@@ -1760,12 +1721,6 @@
     (pin "2" (uuid e7f2cd6f-285d-4a83-9d6a-4d3249f72f01))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/0b45878c-17b8-4be8-9884-0f2bddd34788"
-          (reference "R59") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/510b993f-d652-41da-8b0c-b7668be8d7c3"
-          (reference "R65") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "R137") (unit 1)
         )
@@ -1776,7 +1731,7 @@
   (symbol (lib_id "Device:C_Polarized_US") (at 100.965 149.86 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3f787aa7-d5d4-4493-910b-59bd944e0566)
-    (property "Reference" "C129" (at 104.775 147.955 0)
+    (property "Reference" "C224" (at 104.775 147.955 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10u" (at 104.775 150.495 0)
@@ -1792,9 +1747,6 @@
     (pin "2" (uuid 292fa34c-296c-4e42-8c20-943bbe17d65e))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/56e6206b-9eaf-48e3-8e65-5aed78d22a1d"
-          (reference "C129") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "C224") (unit 1)
         )
@@ -1805,7 +1757,7 @@
   (symbol (lib_id "Device:R") (at 225.425 122.555 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 41b101a0-3374-4a4d-a77c-f9d712fb0fbe)
-    (property "Reference" "R61" (at 227.33 121.285 0)
+    (property "Reference" "R140" (at 227.33 121.285 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "6" (at 227.33 123.825 0)
@@ -1821,12 +1773,6 @@
     (pin "2" (uuid 1b500953-2d9b-4a53-b973-b2c53e3ebabf))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/0b45878c-17b8-4be8-9884-0f2bddd34788"
-          (reference "R61") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/510b993f-d652-41da-8b0c-b7668be8d7c3"
-          (reference "R68") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "R140") (unit 1)
         )
@@ -1837,7 +1783,7 @@
   (symbol (lib_id "Device:L_Ferrite_Coupled_1423") (at 225.425 70.485 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 445dafed-3e08-4428-968a-09d5d836d663)
-    (property "Reference" "L12" (at 226.695 63.5 90)
+    (property "Reference" "L55" (at 226.695 63.5 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "FT37-43" (at 222.25 71.501 90)
@@ -1855,15 +1801,6 @@
     (pin "4" (uuid b15aa470-37d8-4162-8823-35f6bf9d595a))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/0b45878c-17b8-4be8-9884-0f2bddd34788"
-          (reference "L12") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/4a33e42c-b3be-4c3a-afde-bb63d1cdac9b"
-          (reference "L14") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/510b993f-d652-41da-8b0c-b7668be8d7c3"
-          (reference "L15") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "L55") (unit 1)
         )
@@ -1874,7 +1811,7 @@
   (symbol (lib_id "power:GND") (at 214.63 118.745 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 47f2eeb9-effc-4bc2-ad36-87348ee83803)
-    (property "Reference" "#PWR0130" (at 214.63 125.095 0)
+    (property "Reference" "#PWR0304" (at 214.63 125.095 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 214.63 123.825 0)
@@ -1889,12 +1826,6 @@
     (pin "1" (uuid 23a7080b-17d2-438b-948f-b8054d10829e))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/0b45878c-17b8-4be8-9884-0f2bddd34788"
-          (reference "#PWR0130") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/510b993f-d652-41da-8b0c-b7668be8d7c3"
-          (reference "#PWR0134") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "#PWR0304") (unit 1)
         )
@@ -1931,7 +1862,7 @@
   (symbol (lib_id "RF_Mixer:ADE-6") (at 180.34 99.06 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 495b5513-4dfd-4c65-9dfb-e45dd8079b0c)
-    (property "Reference" "U11" (at 180.34 87.63 0)
+    (property "Reference" "U19" (at 180.34 87.63 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "ADE-6" (at 180.34 90.17 0)
@@ -1951,12 +1882,6 @@
     (pin "6" (uuid e2c5253c-a197-4845-913c-2f476afde949))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/56e6206b-9eaf-48e3-8e65-5aed78d22a1d"
-          (reference "U11") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/510b993f-d652-41da-8b0c-b7668be8d7c3"
-          (reference "U11") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "U19") (unit 1)
         )
@@ -1967,7 +1892,7 @@
   (symbol (lib_id "power:GND") (at 185.42 112.395 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5cad2878-6511-4f1c-9ec1-81cef1a199dd)
-    (property "Reference" "#PWR0137" (at 185.42 118.745 0)
+    (property "Reference" "#PWR0302" (at 185.42 118.745 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 185.42 117.475 0)
@@ -1982,12 +1907,6 @@
     (pin "1" (uuid c31c8a21-5f3a-46a7-ac1c-21cecc8d485a))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/56e6206b-9eaf-48e3-8e65-5aed78d22a1d"
-          (reference "#PWR0137") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/510b993f-d652-41da-8b0c-b7668be8d7c3"
-          (reference "#PWR0137") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "#PWR0302") (unit 1)
         )
@@ -2024,7 +1943,7 @@
   (symbol (lib_id "Device:R") (at 100.965 133.985 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6154c47f-2a91-43c2-b861-c0585524e598)
-    (property "Reference" "R80" (at 102.87 132.715 0)
+    (property "Reference" "R149" (at 102.87 132.715 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1K" (at 102.87 135.255 0)
@@ -2040,9 +1959,6 @@
     (pin "2" (uuid 656d89f1-57cc-4087-b040-88bd7f406197))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/56e6206b-9eaf-48e3-8e65-5aed78d22a1d"
-          (reference "R80") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "R149") (unit 1)
         )
@@ -2053,7 +1969,7 @@
   (symbol (lib_id "Device:R") (at 238.76 58.42 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6f941f18-d507-4167-9b48-1b3b8c3cb837)
-    (property "Reference" "R63" (at 240.665 57.15 0)
+    (property "Reference" "R141" (at 240.665 57.15 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "22" (at 240.665 59.69 0)
@@ -2069,12 +1985,6 @@
     (pin "2" (uuid 6ee951e8-d9a3-4d1c-a987-365cc5db2547))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/0b45878c-17b8-4be8-9884-0f2bddd34788"
-          (reference "R63") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/510b993f-d652-41da-8b0c-b7668be8d7c3"
-          (reference "R69") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "R141") (unit 1)
         )
@@ -2085,7 +1995,7 @@
   (symbol (lib_id "power:GND") (at 100.965 156.845 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 750aa7a8-0649-454a-bff4-beee28cc21cd)
-    (property "Reference" "#PWR0221" (at 100.965 163.195 0)
+    (property "Reference" "#PWR0317" (at 100.965 163.195 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 100.965 161.925 0)
@@ -2100,9 +2010,6 @@
     (pin "1" (uuid 4fcb2044-ce9d-4c70-a6ad-d5507effb35b))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/56e6206b-9eaf-48e3-8e65-5aed78d22a1d"
-          (reference "#PWR0221") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "#PWR0317") (unit 1)
         )
@@ -2113,7 +2020,7 @@
   (symbol (lib_id "Amplifier_Operational:NE5532") (at 113.03 94.615 0) (unit 2)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 80fb4332-9f9d-4f69-97b9-db631542dcb3)
-    (property "Reference" "U15" (at 113.03 85.09 0)
+    (property "Reference" "U20" (at 113.03 85.09 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "NE5532" (at 113.03 87.63 0)
@@ -2135,9 +2042,6 @@
     (pin "8" (uuid 50ffcb67-2691-4774-84cb-8fa931faf39c))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/56e6206b-9eaf-48e3-8e65-5aed78d22a1d"
-          (reference "U15") (unit 2)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "U20") (unit 2)
         )
@@ -2148,7 +2052,7 @@
   (symbol (lib_id "Transistor_BJT:2N3904") (at 212.09 99.06 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 81e54b96-2148-4611-a8a3-3a9f0512481b)
-    (property "Reference" "Q12" (at 217.805 97.79 0)
+    (property "Reference" "Q32" (at 217.805 97.79 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "2N3904" (at 217.805 100.33 0)
@@ -2165,12 +2069,6 @@
     (pin "3" (uuid 5f04890c-51e8-4dbe-b283-c61f28e9ceef))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/0b45878c-17b8-4be8-9884-0f2bddd34788"
-          (reference "Q12") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/510b993f-d652-41da-8b0c-b7668be8d7c3"
-          (reference "Q13") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "Q32") (unit 1)
         )
@@ -2181,7 +2079,7 @@
   (symbol (lib_id "Device:R") (at 45.72 149.225 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 91935d7a-b17b-4cc7-8276-a0762d35ae41)
-    (property "Reference" "R76" (at 47.625 147.955 0)
+    (property "Reference" "R146" (at 47.625 147.955 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10K" (at 47.625 150.495 0)
@@ -2197,9 +2095,6 @@
     (pin "2" (uuid ada55de6-787e-47ca-b6dd-7cdcb3bcc773))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/56e6206b-9eaf-48e3-8e65-5aed78d22a1d"
-          (reference "R76") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "R146") (unit 1)
         )
@@ -2210,7 +2105,7 @@
   (symbol (lib_id "Device:C") (at 225.425 112.395 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9607fb0a-e91b-47cb-9792-e5c45c252343)
-    (property "Reference" "C80" (at 228.6 111.125 0)
+    (property "Reference" "C217" (at 228.6 111.125 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "0.1u" (at 228.6 113.665 0)
@@ -2226,12 +2121,6 @@
     (pin "2" (uuid 818fc1b2-e57d-4f38-9af9-1572543bf1fb))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/0b45878c-17b8-4be8-9884-0f2bddd34788"
-          (reference "C80") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/510b993f-d652-41da-8b0c-b7668be8d7c3"
-          (reference "C85") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "C217") (unit 1)
         )
@@ -2242,7 +2131,7 @@
   (symbol (lib_id "Device:R") (at 214.63 112.395 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9bc45986-39a6-4c69-8be5-3a5d4ff52b66)
-    (property "Reference" "R61" (at 216.535 111.125 0)
+    (property "Reference" "R139" (at 216.535 111.125 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "68" (at 216.535 113.665 0)
@@ -2258,12 +2147,6 @@
     (pin "2" (uuid cda928d3-9fe4-4803-94e9-eaa9ffb956b4))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/0b45878c-17b8-4be8-9884-0f2bddd34788"
-          (reference "R61") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/510b993f-d652-41da-8b0c-b7668be8d7c3"
-          (reference "R67") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "R139") (unit 1)
         )
@@ -2274,7 +2157,7 @@
   (symbol (lib_id "power:GND") (at 32.385 86.995 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9d283772-61eb-4e28-96a9-f477d80170d6)
-    (property "Reference" "#PWR0225" (at 32.385 93.345 0)
+    (property "Reference" "#PWR0320" (at 32.385 93.345 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 32.385 92.075 0)
@@ -2289,9 +2172,6 @@
     (pin "1" (uuid 952f62cb-395e-4d68-9910-a671e2aba16f))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/56e6206b-9eaf-48e3-8e65-5aed78d22a1d"
-          (reference "#PWR0225") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "#PWR0320") (unit 1)
         )
@@ -2328,7 +2208,7 @@
   (symbol (lib_id "power:GND") (at 204.47 113.03 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9e386c4e-446e-4fee-b560-4b690982b74d)
-    (property "Reference" "#PWR0129" (at 204.47 119.38 0)
+    (property "Reference" "#PWR0303" (at 204.47 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 204.47 118.11 0)
@@ -2343,12 +2223,6 @@
     (pin "1" (uuid 60c2c28b-51c1-48e3-b137-3c78c59d4301))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/0b45878c-17b8-4be8-9884-0f2bddd34788"
-          (reference "#PWR0129") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/510b993f-d652-41da-8b0c-b7668be8d7c3"
-          (reference "#PWR0133") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "#PWR0303") (unit 1)
         )
@@ -2359,7 +2233,7 @@
   (symbol (lib_id "Device:C") (at 240.665 99.06 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a088c36b-d8f7-400c-b4e9-2061c270bac7)
-    (property "Reference" "C82" (at 240.665 92.075 90)
+    (property "Reference" "C219" (at 240.665 92.075 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "0.1u" (at 240.665 94.615 90)
@@ -2375,12 +2249,6 @@
     (pin "2" (uuid 47868da0-9cf5-437d-8969-49526c2ec9ee))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/0b45878c-17b8-4be8-9884-0f2bddd34788"
-          (reference "C82") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/510b993f-d652-41da-8b0c-b7668be8d7c3"
-          (reference "C87") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "C219") (unit 1)
         )
@@ -2391,7 +2259,7 @@
   (symbol (lib_id "power:GND") (at 78.74 151.765 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a7b51711-ab87-4ee8-a1a0-dbb5dd3a2d53)
-    (property "Reference" "#PWR0210" (at 78.74 158.115 0)
+    (property "Reference" "#PWR0314" (at 78.74 158.115 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 78.74 156.845 0)
@@ -2406,9 +2274,6 @@
     (pin "1" (uuid aa240f68-baae-41ea-a9af-2c92b8f0ab21))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/56e6206b-9eaf-48e3-8e65-5aed78d22a1d"
-          (reference "#PWR0210") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "#PWR0314") (unit 1)
         )
@@ -2419,7 +2284,7 @@
   (symbol (lib_id "power:GND") (at 259.715 112.395 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a988cf09-3231-4200-9504-5b2ce79af866)
-    (property "Reference" "#PWR0140" (at 259.715 118.745 0)
+    (property "Reference" "#PWR0308" (at 259.715 118.745 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 259.715 117.475 0)
@@ -2434,12 +2299,6 @@
     (pin "1" (uuid 2a4a889e-9ade-49d7-a4b9-183183b52790))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/0b45878c-17b8-4be8-9884-0f2bddd34788"
-          (reference "#PWR0140") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/510b993f-d652-41da-8b0c-b7668be8d7c3"
-          (reference "#PWR0140") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "#PWR0308") (unit 1)
         )
@@ -2450,7 +2309,7 @@
   (symbol (lib_id "Device:C_Polarized_US") (at 132.08 94.615 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ad3405ec-8da9-4ab9-a29a-bbf0f64dfe5a)
-    (property "Reference" "C132" (at 131.445 86.995 90)
+    (property "Reference" "C225" (at 131.445 86.995 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10u" (at 131.445 89.535 90)
@@ -2466,9 +2325,6 @@
     (pin "2" (uuid 09c469cf-98e9-4645-b072-ff9f549b9839))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/56e6206b-9eaf-48e3-8e65-5aed78d22a1d"
-          (reference "C132") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "C225") (unit 1)
         )
@@ -2479,7 +2335,7 @@
   (symbol (lib_id "Device:R_Potentiometer_Trim") (at 113.03 107.95 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b5713f30-853e-401b-a30b-453837d7f744)
-    (property "Reference" "RV4" (at 113.03 101.6 90)
+    (property "Reference" "RV9" (at 113.03 101.6 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100K" (at 113.03 104.14 90)
@@ -2496,9 +2352,6 @@
     (pin "3" (uuid 8d24abe4-7fe2-4aeb-b528-4900edb37773))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/56e6206b-9eaf-48e3-8e65-5aed78d22a1d"
-          (reference "RV4") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "RV9") (unit 1)
         )
@@ -2562,7 +2415,7 @@
   (symbol (lib_id "Device:C") (at 209.55 75.565 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c1d39e12-3ccd-4cc9-83ae-f92464f83cc8)
-    (property "Reference" "C79" (at 209.55 68.58 90)
+    (property "Reference" "C216" (at 209.55 68.58 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "0.1u" (at 209.55 71.12 90)
@@ -2578,12 +2431,6 @@
     (pin "2" (uuid 7604a40f-e99d-4ffe-b31d-b4f59964f6ef))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/0b45878c-17b8-4be8-9884-0f2bddd34788"
-          (reference "C79") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/510b993f-d652-41da-8b0c-b7668be8d7c3"
-          (reference "C84") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "C216") (unit 1)
         )
@@ -2594,7 +2441,7 @@
   (symbol (lib_id "power:GND") (at 137.795 114.3 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c33da08b-187d-4ddd-8f9f-209c97dd080a)
-    (property "Reference" "#PWR0137" (at 137.795 120.65 0)
+    (property "Reference" "#PWR0318" (at 137.795 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 137.795 119.38 0)
@@ -2609,12 +2456,6 @@
     (pin "1" (uuid f712f84d-9de7-4436-85b0-0057e6d44061))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/56e6206b-9eaf-48e3-8e65-5aed78d22a1d"
-          (reference "#PWR0137") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/510b993f-d652-41da-8b0c-b7668be8d7c3"
-          (reference "#PWR0137") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "#PWR0318") (unit 1)
         )
@@ -2625,7 +2466,7 @@
   (symbol (lib_id "power:GND") (at 248.285 111.76 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c4a4aeb5-a0e0-4405-b44c-ecc85c104df6)
-    (property "Reference" "#PWR0139" (at 248.285 118.11 0)
+    (property "Reference" "#PWR0307" (at 248.285 118.11 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 248.285 116.84 0)
@@ -2640,12 +2481,6 @@
     (pin "1" (uuid 127a4ebf-98d5-4985-b411-2baa0841c886))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/0b45878c-17b8-4be8-9884-0f2bddd34788"
-          (reference "#PWR0139") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/510b993f-d652-41da-8b0c-b7668be8d7c3"
-          (reference "#PWR0139") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "#PWR0307") (unit 1)
         )
@@ -2656,7 +2491,7 @@
   (symbol (lib_id "Device:R") (at 209.55 86.36 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c558cbd8-8ee9-4008-9344-63ec641e7c89)
-    (property "Reference" "R60" (at 209.55 80.01 90)
+    (property "Reference" "R138" (at 209.55 80.01 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "3.3K" (at 209.55 82.55 90)
@@ -2672,12 +2507,6 @@
     (pin "2" (uuid 4f49352b-b48c-464c-a2c3-d24f116ac71c))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/0b45878c-17b8-4be8-9884-0f2bddd34788"
-          (reference "R60") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/510b993f-d652-41da-8b0c-b7668be8d7c3"
-          (reference "R66") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "R138") (unit 1)
         )
@@ -2688,7 +2517,7 @@
   (symbol (lib_id "Device:R") (at 259.715 106.045 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c6a09812-5d4b-4639-9389-df627ac8959f)
-    (property "Reference" "R72" (at 262.255 104.775 0)
+    (property "Reference" "R144" (at 262.255 104.775 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "150" (at 262.255 107.315 0)
@@ -2704,12 +2533,6 @@
     (pin "2" (uuid 4cdeab9b-b966-46e1-812c-3d530dcf39f9))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/0b45878c-17b8-4be8-9884-0f2bddd34788"
-          (reference "R72") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/510b993f-d652-41da-8b0c-b7668be8d7c3"
-          (reference "R72") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "R144") (unit 1)
         )
@@ -2720,7 +2543,7 @@
   (symbol (lib_id "Amplifier_Operational:NE5532") (at 81.28 142.24 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c7f0790e-8749-43b5-ac17-68ef71e6a556)
-    (property "Reference" "U15" (at 82.55 134.62 0)
+    (property "Reference" "U20" (at 82.55 134.62 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "NE5532" (at 83.82 136.525 0)
@@ -2742,9 +2565,6 @@
     (pin "8" (uuid 92545d6a-b543-4cee-bf7f-c1efccaaff44))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/56e6206b-9eaf-48e3-8e65-5aed78d22a1d"
-          (reference "U15") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "U20") (unit 1)
         )
@@ -2755,7 +2575,7 @@
   (symbol (lib_id "Device:R") (at 204.47 91.44 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c9d73447-e9f6-461a-887e-680669a2be35)
-    (property "Reference" "R58" (at 206.375 90.17 0)
+    (property "Reference" "R136" (at 206.375 90.17 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1.3K" (at 206.375 92.71 0)
@@ -2771,12 +2591,6 @@
     (pin "2" (uuid 0dee5890-cae7-4fa9-9f3a-aaedb23a67c0))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/0b45878c-17b8-4be8-9884-0f2bddd34788"
-          (reference "R58") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/510b993f-d652-41da-8b0c-b7668be8d7c3"
-          (reference "R64") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "R136") (unit 1)
         )
@@ -2787,7 +2601,7 @@
   (symbol (lib_id "Device:C") (at 199.39 99.06 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d32f27de-4e5f-45f1-8f67-36235f4a3837)
-    (property "Reference" "C78" (at 199.39 92.075 90)
+    (property "Reference" "C215" (at 199.39 92.075 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "0.1u" (at 199.39 94.615 90)
@@ -2803,12 +2617,6 @@
     (pin "2" (uuid fd40e769-8b56-4226-a93d-407fcc64c855))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/0b45878c-17b8-4be8-9884-0f2bddd34788"
-          (reference "C78") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/510b993f-d652-41da-8b0c-b7668be8d7c3"
-          (reference "C83") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "C215") (unit 1)
         )
@@ -2845,7 +2653,7 @@
   (symbol (lib_id "Device:R") (at 248.285 106.045 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e0746298-c6aa-4076-9500-c539499c0206)
-    (property "Reference" "R70" (at 250.825 104.775 0)
+    (property "Reference" "R142" (at 250.825 104.775 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "150" (at 250.825 107.315 0)
@@ -2861,12 +2669,6 @@
     (pin "2" (uuid 89e4b784-c506-495f-a07d-278752efa5f1))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/0b45878c-17b8-4be8-9884-0f2bddd34788"
-          (reference "R70") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/510b993f-d652-41da-8b0c-b7668be8d7c3"
-          (reference "R70") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "R142") (unit 1)
         )
@@ -2877,7 +2679,7 @@
   (symbol (lib_id "Device:R") (at 90.805 99.695 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e77123b7-c6d0-46d2-a3f5-695fe488a7bb)
-    (property "Reference" "R79" (at 92.71 98.425 0)
+    (property "Reference" "R148" (at 92.71 98.425 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10K" (at 92.71 100.965 0)
@@ -2893,9 +2695,6 @@
     (pin "2" (uuid 9ac79157-3d4c-427c-b93c-c8394fd55198))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/56e6206b-9eaf-48e3-8e65-5aed78d22a1d"
-          (reference "R79") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "R148") (unit 1)
         )
@@ -2906,7 +2705,7 @@
   (symbol (lib_id "power:GND") (at 56.515 155.575 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ea850621-06ec-45c1-b51d-a558791fd9b7)
-    (property "Reference" "#PWR0222" (at 56.515 161.925 0)
+    (property "Reference" "#PWR0313" (at 56.515 161.925 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 56.515 160.655 0)
@@ -2921,9 +2720,6 @@
     (pin "1" (uuid b26eecfb-b20a-457d-8cdb-0e1d6958b31d))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/56e6206b-9eaf-48e3-8e65-5aed78d22a1d"
-          (reference "#PWR0222") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "#PWR0313") (unit 1)
         )
@@ -2934,7 +2730,7 @@
   (symbol (lib_id "Device:C_Polarized_US") (at 21.59 131.445 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid eef08ab0-5907-4d60-9e6d-3410751c7b20)
-    (property "Reference" "C212" (at 25.4 129.54 0)
+    (property "Reference" "C220" (at 25.4 129.54 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100u" (at 25.4 132.08 0)
@@ -2950,9 +2746,6 @@
     (pin "2" (uuid 4e8a2fa7-1f4a-4fa1-bcb9-064efbb8a92f))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/56e6206b-9eaf-48e3-8e65-5aed78d22a1d"
-          (reference "C212") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "C220") (unit 1)
         )
@@ -2963,7 +2756,7 @@
   (symbol (lib_id "power:GND") (at 164.465 106.045 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f13b43cc-1f19-4a20-bc56-7f083823dcf7)
-    (property "Reference" "#PWR0137" (at 164.465 112.395 0)
+    (property "Reference" "#PWR0311" (at 164.465 112.395 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 164.465 111.125 0)
@@ -2978,12 +2771,6 @@
     (pin "1" (uuid b4451292-3035-4ad8-94a3-63ec3a4b3db5))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/56e6206b-9eaf-48e3-8e65-5aed78d22a1d"
-          (reference "#PWR0137") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/510b993f-d652-41da-8b0c-b7668be8d7c3"
-          (reference "#PWR0137") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "#PWR0311") (unit 1)
         )
@@ -2994,7 +2781,7 @@
   (symbol (lib_id "Device:C") (at 34.29 130.81 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f4f54537-97d9-4c43-af9e-1347c8d26175)
-    (property "Reference" "C113" (at 37.465 129.54 0)
+    (property "Reference" "C221" (at 37.465 129.54 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0.1u" (at 37.465 132.08 0)
@@ -3010,9 +2797,6 @@
     (pin "2" (uuid d626da6a-8b9c-4720-89a7-93c2ab277452))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/56e6206b-9eaf-48e3-8e65-5aed78d22a1d"
-          (reference "C113") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "C221") (unit 1)
         )
@@ -3023,7 +2807,7 @@
   (symbol (lib_id "Device:C") (at 238.76 71.755 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f92d43ab-7b20-498d-aa6d-9e7feccc0e87)
-    (property "Reference" "C81" (at 241.935 70.485 0)
+    (property "Reference" "C218" (at 241.935 70.485 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "0.1u" (at 241.935 73.025 0)
@@ -3039,12 +2823,6 @@
     (pin "2" (uuid ab421345-505e-41d9-80f2-ec805959bc9a))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/0b45878c-17b8-4be8-9884-0f2bddd34788"
-          (reference "C81") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/510b993f-d652-41da-8b0c-b7668be8d7c3"
-          (reference "C86") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "C218") (unit 1)
         )
@@ -3055,7 +2833,7 @@
   (symbol (lib_id "Device:R") (at 254 99.06 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fb16c4fb-7fa4-4762-b763-f1ac34ef1817)
-    (property "Reference" "R71" (at 254 92.71 90)
+    (property "Reference" "R143" (at 254 92.71 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "36" (at 254 95.25 90)
@@ -3071,12 +2849,6 @@
     (pin "2" (uuid c067e85f-60f2-43de-9591-fc68c23e1ef2))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/0b45878c-17b8-4be8-9884-0f2bddd34788"
-          (reference "R71") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/510b993f-d652-41da-8b0c-b7668be8d7c3"
-          (reference "R71") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "R143") (unit 1)
         )
@@ -3087,7 +2859,7 @@
   (symbol (lib_id "power:GND") (at 150.495 114.3 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fcf86591-99b2-4bac-8f4d-a63068cc311f)
-    (property "Reference" "#PWR0137" (at 150.495 120.65 0)
+    (property "Reference" "#PWR0315" (at 150.495 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 150.495 119.38 0)
@@ -3102,12 +2874,6 @@
     (pin "1" (uuid 362939c7-7dc1-4bf1-8af8-df22e2f0f4ef))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/56e6206b-9eaf-48e3-8e65-5aed78d22a1d"
-          (reference "#PWR0137") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/510b993f-d652-41da-8b0c-b7668be8d7c3"
-          (reference "#PWR0137") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/26d4209b-4b6a-47db-b7b4-4be5d9a4ef65"
           (reference "#PWR0315") (unit 1)
         )

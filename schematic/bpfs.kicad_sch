@@ -1897,7 +1897,7 @@
   (symbol (lib_id "Device:L_Ferrite_Coupled_1423") (at 245.11 47.625 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 06cfe493-be0b-4ac4-aa4f-84ac99a0614f)
-    (property "Reference" "L12" (at 238.125 45.72 90)
+    (property "Reference" "L28" (at 238.125 45.72 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "T37-6" (at 235.585 48.895 90)
@@ -1915,15 +1915,6 @@
     (pin "4" (uuid e602673f-ff19-41a2-8925-693a4001a615))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/0b45878c-17b8-4be8-9884-0f2bddd34788"
-          (reference "L12") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/4a33e42c-b3be-4c3a-afde-bb63d1cdac9b"
-          (reference "L14") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/510b993f-d652-41da-8b0c-b7668be8d7c3"
-          (reference "L16") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/9b57eeda-e28c-4847-8b77-1345aaa63601"
           (reference "L28") (unit 1)
         )
@@ -1960,7 +1951,7 @@
   (symbol (lib_id "Device:L_Ferrite_Coupled_1423") (at 247.015 110.49 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 10df27a3-d1bf-43a2-ba66-5d1c291756b0)
-    (property "Reference" "L12" (at 240.03 108.585 90)
+    (property "Reference" "L30" (at 240.03 108.585 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "T37-6" (at 237.49 111.76 90)
@@ -1978,15 +1969,6 @@
     (pin "4" (uuid 1631bda1-d7da-4273-82e8-9bf30051383e))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/0b45878c-17b8-4be8-9884-0f2bddd34788"
-          (reference "L12") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/4a33e42c-b3be-4c3a-afde-bb63d1cdac9b"
-          (reference "L14") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/510b993f-d652-41da-8b0c-b7668be8d7c3"
-          (reference "L16") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/9b57eeda-e28c-4847-8b77-1345aaa63601"
           (reference "L30") (unit 1)
         )
@@ -2101,7 +2083,7 @@
   (symbol (lib_id "Device:L_Ferrite_Coupled_1423") (at 124.46 47.625 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 213c3ef5-0dd6-431c-859c-d61927caa82a)
-    (property "Reference" "L12" (at 117.475 45.72 90)
+    (property "Reference" "L17" (at 117.475 45.72 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "T37-2" (at 114.935 48.895 90)
@@ -2119,15 +2101,6 @@
     (pin "4" (uuid 856a7600-6fb3-42e4-8c9a-f122546c3e0a))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/0b45878c-17b8-4be8-9884-0f2bddd34788"
-          (reference "L12") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/4a33e42c-b3be-4c3a-afde-bb63d1cdac9b"
-          (reference "L14") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/510b993f-d652-41da-8b0c-b7668be8d7c3"
-          (reference "L16") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/9b57eeda-e28c-4847-8b77-1345aaa63601"
           (reference "L17") (unit 1)
         )
@@ -2293,7 +2266,7 @@
   (symbol (lib_id "Device:L_Ferrite_Coupled_1423") (at 170.18 110.49 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 41808810-89cf-4d14-b1f3-6b4257a791d1)
-    (property "Reference" "L12" (at 177.165 108.585 90)
+    (property "Reference" "L26" (at 177.165 108.585 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "T37-6" (at 179.705 111.76 90)
@@ -2311,15 +2284,6 @@
     (pin "4" (uuid 7a8c57a2-7a3c-48f7-81ed-debe6c5abf0c))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/0b45878c-17b8-4be8-9884-0f2bddd34788"
-          (reference "L12") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/4a33e42c-b3be-4c3a-afde-bb63d1cdac9b"
-          (reference "L14") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/510b993f-d652-41da-8b0c-b7668be8d7c3"
-          (reference "L16") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/9b57eeda-e28c-4847-8b77-1345aaa63601"
           (reference "L26") (unit 1)
         )
@@ -2407,7 +2371,7 @@
   (symbol (lib_id "Device:L_Ferrite_Coupled_1423") (at 246.38 80.01 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4d56c692-5cd0-4847-b674-a9b8f1d9c292)
-    (property "Reference" "L12" (at 239.395 78.105 90)
+    (property "Reference" "L29" (at 239.395 78.105 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "T37-6" (at 236.855 81.28 90)
@@ -2425,15 +2389,6 @@
     (pin "4" (uuid db93c050-e1b4-40fb-9d27-c1d3e8c897e8))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/0b45878c-17b8-4be8-9884-0f2bddd34788"
-          (reference "L12") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/4a33e42c-b3be-4c3a-afde-bb63d1cdac9b"
-          (reference "L14") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/510b993f-d652-41da-8b0c-b7668be8d7c3"
-          (reference "L16") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/9b57eeda-e28c-4847-8b77-1345aaa63601"
           (reference "L29") (unit 1)
         )
@@ -2469,7 +2424,7 @@
   (symbol (lib_id "Device:L_Ferrite_Coupled_1423") (at 125.73 80.01 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5b3ced0e-12ee-4f37-8190-f88d5af27826)
-    (property "Reference" "L12" (at 118.745 78.105 90)
+    (property "Reference" "L19" (at 118.745 78.105 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "T37-6" (at 116.205 81.28 90)
@@ -2487,15 +2442,6 @@
     (pin "4" (uuid 80e8ed74-5f81-4fcd-ad83-0e18d58f9624))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/0b45878c-17b8-4be8-9884-0f2bddd34788"
-          (reference "L12") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/4a33e42c-b3be-4c3a-afde-bb63d1cdac9b"
-          (reference "L14") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/510b993f-d652-41da-8b0c-b7668be8d7c3"
-          (reference "L16") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/9b57eeda-e28c-4847-8b77-1345aaa63601"
           (reference "L19") (unit 1)
         )
@@ -2895,7 +2841,7 @@
   (symbol (lib_id "Device:L_Ferrite_Coupled_1423") (at 171.45 142.875 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9fdd1773-28a4-47f0-9af5-5a4dde72b835)
-    (property "Reference" "L12" (at 178.435 140.97 90)
+    (property "Reference" "L27" (at 178.435 140.97 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "T37-6" (at 180.975 144.145 90)
@@ -2913,15 +2859,6 @@
     (pin "4" (uuid b9c4950a-d80d-4198-b053-fd28cac78f67))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/0b45878c-17b8-4be8-9884-0f2bddd34788"
-          (reference "L12") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/4a33e42c-b3be-4c3a-afde-bb63d1cdac9b"
-          (reference "L14") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/510b993f-d652-41da-8b0c-b7668be8d7c3"
-          (reference "L16") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/9b57eeda-e28c-4847-8b77-1345aaa63601"
           (reference "L27") (unit 1)
         )
@@ -3009,7 +2946,7 @@
   (symbol (lib_id "Device:L_Ferrite_Coupled_1423") (at 48.895 80.01 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid aae74a95-d368-4b51-9397-2f121e089dcd)
-    (property "Reference" "L12" (at 55.88 78.105 90)
+    (property "Reference" "L18" (at 55.88 78.105 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "T37-6" (at 58.42 81.28 90)
@@ -3027,15 +2964,6 @@
     (pin "4" (uuid 1b3d7a34-511a-4212-8446-6c45a5309414))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/0b45878c-17b8-4be8-9884-0f2bddd34788"
-          (reference "L12") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/4a33e42c-b3be-4c3a-afde-bb63d1cdac9b"
-          (reference "L14") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/510b993f-d652-41da-8b0c-b7668be8d7c3"
-          (reference "L16") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/9b57eeda-e28c-4847-8b77-1345aaa63601"
           (reference "L18") (unit 1)
         )
@@ -3072,7 +3000,7 @@
   (symbol (lib_id "Device:L_Ferrite_Coupled_1423") (at 127.635 142.875 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ac1975df-cb0f-48c2-8b45-4b10fa93f42c)
-    (property "Reference" "L12" (at 120.65 140.97 90)
+    (property "Reference" "L23" (at 120.65 140.97 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "T37-6" (at 118.11 144.145 90)
@@ -3090,15 +3018,6 @@
     (pin "4" (uuid f8538f7e-24c6-4268-a087-2df0dcaf0552))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/0b45878c-17b8-4be8-9884-0f2bddd34788"
-          (reference "L12") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/4a33e42c-b3be-4c3a-afde-bb63d1cdac9b"
-          (reference "L14") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/510b993f-d652-41da-8b0c-b7668be8d7c3"
-          (reference "L16") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/9b57eeda-e28c-4847-8b77-1345aaa63601"
           (reference "L23") (unit 1)
         )
@@ -3186,7 +3105,7 @@
   (symbol (lib_id "Device:L_Ferrite_Coupled_1423") (at 50.8 142.875 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid bbea96c1-8767-416b-854e-e116c15b6773)
-    (property "Reference" "L12" (at 57.785 140.97 90)
+    (property "Reference" "L21" (at 57.785 140.97 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "T37-6" (at 60.325 144.145 90)
@@ -3204,15 +3123,6 @@
     (pin "4" (uuid 9150ff93-815b-4e55-9030-2c9825b99440))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/0b45878c-17b8-4be8-9884-0f2bddd34788"
-          (reference "L12") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/4a33e42c-b3be-4c3a-afde-bb63d1cdac9b"
-          (reference "L14") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/510b993f-d652-41da-8b0c-b7668be8d7c3"
-          (reference "L16") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/9b57eeda-e28c-4847-8b77-1345aaa63601"
           (reference "L21") (unit 1)
         )
@@ -3299,7 +3209,7 @@
   (symbol (lib_id "Device:L_Ferrite_Coupled_1423") (at 126.365 110.49 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c7c55bdf-157d-4478-b49d-e1cca514b8e4)
-    (property "Reference" "L12" (at 119.38 108.585 90)
+    (property "Reference" "L22" (at 119.38 108.585 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "T37-6" (at 116.84 111.76 90)
@@ -3317,15 +3227,6 @@
     (pin "4" (uuid 1ae2a7b4-5b01-4f0c-87dc-9d8da8d9cc6f))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/0b45878c-17b8-4be8-9884-0f2bddd34788"
-          (reference "L12") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/4a33e42c-b3be-4c3a-afde-bb63d1cdac9b"
-          (reference "L14") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/510b993f-d652-41da-8b0c-b7668be8d7c3"
-          (reference "L16") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/9b57eeda-e28c-4847-8b77-1345aaa63601"
           (reference "L22") (unit 1)
         )
@@ -3336,7 +3237,7 @@
   (symbol (lib_id "Device:L_Ferrite_Coupled_1423") (at 248.285 142.875 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ca08bc91-2e3f-4936-b463-4804097caa8d)
-    (property "Reference" "L12" (at 241.3 140.97 90)
+    (property "Reference" "L31" (at 241.3 140.97 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "T37-6" (at 238.76 144.145 90)
@@ -3354,15 +3255,6 @@
     (pin "4" (uuid 54b495a1-56e9-4dcf-81ae-bc0b072a92b6))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/0b45878c-17b8-4be8-9884-0f2bddd34788"
-          (reference "L12") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/4a33e42c-b3be-4c3a-afde-bb63d1cdac9b"
-          (reference "L14") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/510b993f-d652-41da-8b0c-b7668be8d7c3"
-          (reference "L16") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/9b57eeda-e28c-4847-8b77-1345aaa63601"
           (reference "L31") (unit 1)
         )
@@ -3425,7 +3317,7 @@
   (symbol (lib_id "Device:L_Ferrite_Coupled_1423") (at 169.545 80.01 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d7ef1f63-b3bd-4051-9459-cacc5dddcaf0)
-    (property "Reference" "L12" (at 176.53 78.105 90)
+    (property "Reference" "L25" (at 176.53 78.105 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "T37-6" (at 179.07 81.28 90)
@@ -3443,15 +3335,6 @@
     (pin "4" (uuid 8f0de4f3-b490-43f6-a6ab-3e7a22cad9c3))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/0b45878c-17b8-4be8-9884-0f2bddd34788"
-          (reference "L12") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/4a33e42c-b3be-4c3a-afde-bb63d1cdac9b"
-          (reference "L14") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/510b993f-d652-41da-8b0c-b7668be8d7c3"
-          (reference "L16") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/9b57eeda-e28c-4847-8b77-1345aaa63601"
           (reference "L25") (unit 1)
         )
@@ -3462,7 +3345,7 @@
   (symbol (lib_id "Device:L_Ferrite_Coupled_1423") (at 168.275 47.625 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d9903b72-c85b-480b-9a20-7cb8f3c921e5)
-    (property "Reference" "L12" (at 175.26 45.72 90)
+    (property "Reference" "L24" (at 175.26 45.72 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "T37-6" (at 177.8 48.895 90)
@@ -3480,15 +3363,6 @@
     (pin "4" (uuid 12fdc332-951c-4c66-968a-cc32a7bf237c))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/0b45878c-17b8-4be8-9884-0f2bddd34788"
-          (reference "L12") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/4a33e42c-b3be-4c3a-afde-bb63d1cdac9b"
-          (reference "L14") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/510b993f-d652-41da-8b0c-b7668be8d7c3"
-          (reference "L16") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/9b57eeda-e28c-4847-8b77-1345aaa63601"
           (reference "L24") (unit 1)
         )
@@ -3525,7 +3399,7 @@
   (symbol (lib_id "Device:L_Ferrite_Coupled_1423") (at 49.53 110.49 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid dfaf2948-d524-4d9e-922e-1579a3a5a8c1)
-    (property "Reference" "L12" (at 56.515 108.585 90)
+    (property "Reference" "L20" (at 56.515 108.585 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "T37-6" (at 59.055 111.76 90)
@@ -3543,15 +3417,6 @@
     (pin "4" (uuid 969bea34-3810-4d18-80a5-568d86bea21d))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/0b45878c-17b8-4be8-9884-0f2bddd34788"
-          (reference "L12") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/4a33e42c-b3be-4c3a-afde-bb63d1cdac9b"
-          (reference "L14") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/510b993f-d652-41da-8b0c-b7668be8d7c3"
-          (reference "L16") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/9b57eeda-e28c-4847-8b77-1345aaa63601"
           (reference "L20") (unit 1)
         )
@@ -3562,7 +3427,7 @@
   (symbol (lib_id "Device:L_Ferrite_Coupled_1423") (at 47.625 47.625 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e8b45572-f49e-4523-a5c9-13397b0d5df3)
-    (property "Reference" "L12" (at 54.61 45.72 90)
+    (property "Reference" "L16" (at 54.61 45.72 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "T37-2" (at 57.15 48.895 90)
@@ -3580,15 +3445,6 @@
     (pin "4" (uuid 5b9aa608-106a-4056-8648-05dd3eb4f4e8))
     (instances
       (project "hbr-mk2"
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/0b45878c-17b8-4be8-9884-0f2bddd34788"
-          (reference "L12") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/4a33e42c-b3be-4c3a-afde-bb63d1cdac9b"
-          (reference "L14") (unit 1)
-        )
-        (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/510b993f-d652-41da-8b0c-b7668be8d7c3"
-          (reference "L16") (unit 1)
-        )
         (path "/700c9878-4ed7-49d5-a273-77cf9d92989d/9b57eeda-e28c-4847-8b77-1345aaa63601"
           (reference "L16") (unit 1)
         )
