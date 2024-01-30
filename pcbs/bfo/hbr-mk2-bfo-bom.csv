@@ -1,0 +1,17 @@
+Reference(s),Qty,Value,Footprint
+"C1, C3, C7",3,0.1u,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+"C2, C4",2,30p,My_Library:C_Trim_THD_L7.0mm_W6.5mm_P5.00mm
+"C5, C6",2,150p,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+"C8, C11",2,470p,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+"C9, C10",2,680p,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+D1,1,1N4148W,Diode_SMD:D_SOD-123
+K1,1,G6K-2F-Y,Relay_SMD:Relay_DPDT_Omron_G6K-2F-Y
+L1,1,18u,Inductor_THT:L_Axial_L7.0mm_D3.3mm_P12.70mm_Horizontal_Fastron_MICC
+L2,1,10u,Inductor_THT:L_Axial_L7.0mm_D3.3mm_P12.70mm_Horizontal_Fastron_MICC
+"L3, L4, L5",3,T50-6,Inductor_THT:L_Toroid_Vertical_L13.0mm_W6.5mm_P5.60mm
+Q1,1,2N7002,Package_TO_SOT_SMD:SOT-23
+"Q2, Q3",2,MMBT3904,Package_TO_SOT_SMD:SOT-23
+"R1, R3",2,22,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+"R2, R4, R5",3,10K,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+"R6, R7, R8",3,1K,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+"Y2, Y3, Y4",3,9,Crystal:Crystal_HC49-U_Vertical

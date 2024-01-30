@@ -1,0 +1,19 @@
+Reference(s),Qty,Value,Footprint
+"C1, C2, C3, C4, C6, C7, C8, C9, C10, C11, C16, C17",12,0.1u,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+C5,1,10u,Capacitor_SMD:CP_Elec_4x5.4
+"C12, C13",2,220u,Capacitor_SMD:CP_Elec_8x10.5
+"C14, C15",2,2.7p,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+"D1, D2",2,1N4148W,Diode_SMD:D_SOD-123
+"K1, K2",2,G6K-2F-Y,Relay_SMD:Relay_DPDT_Omron_G6K-2F-Y
+"L1, L2",2,FT37-43,Inductor_THT:L_Toroid_Vertical_L10.0mm_W5.0mm_P5.08mm
+L3,1,FT50-43,Package_DIP:DIP-4_W10.16mm
+"Q1, Q2, Q3, Q4, Q5, Q6",6,KT3142A,Package_TO_SOT_THT:TO-18-3
+"Q7, Q8",2,RD15HVF1,Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown
+"R1, R6, R8",3,1K,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+"R2, R7, R9",3,100,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+"R3, R4, R10, R11, R12, R13",6,47,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+"R5, R14",2,22,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+"R15, R16, R17, R18",4,220,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+"RV1, RV2",2,10K,Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical
+"T1, T2",2,FT37-43,Package_DIP:DIP-6_W7.62mm
+U1,1,L78L05,Package_TO_SOT_THT:TO-92_HandSolder

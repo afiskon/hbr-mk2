@@ -1,0 +1,24 @@
+Reference(s),Qty,Value,Footprint
+"C1, C2, C3, C4",4,0.1u,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+C5,1,10u,Capacitor_SMD:CP_Elec_4x5.4
+"C6, C22",2,470p,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+"C7, C23",2,150p,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+"C8, C24",2,100p,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+"C9, C25",2,68p,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+"C10, C11, C12, C13, C18, C19, C20, C21, C30, C31, C32, C33, C38, C39, C40, C41",16,30p,My_Library:C_Trim_THD_L7.0mm_W6.5mm_P5.00mm
+C14,1,50p,My_Library:C_Trim_THD_L7.0mm_W6.5mm_P5.00mm
+C15,1,20p,My_Library:C_Trim_THD_L7.0mm_W6.5mm_P5.00mm
+"C16, C17, C34",3,10p,My_Library:C_Trim_THD_L7.0mm_W6.5mm_P5.00mm
+"C26, C42",2,47p,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+"C27, C43",2,33p,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+"C28, C45",2,22p,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+"C35, C36, C37",3,5p,My_Library:C_Trim_THD_L7.0mm_W6.5mm_P5.00mm
+"D1, D2, D3, D4, D5, D6, D7, D8, D9, D10, D11, D12, D13, D14, D15, D16",16,1N4148W,Diode_SMD:D_SOD-123
+"K1, K2, K3, K4, K5, K6, K7, K8, K9, K10, K11, K12, K13, K14, K15, K16",16,G6K-2F-Y,Relay_SMD:Relay_DPDT_Omron_G6K-2F-Y
+"L1, L5",2,T37-2,Package_DIP:DIP-4_W7.62mm
+"L2, L3, L4, L6, L7, L8, L9, L10, L11, L12, L13, L14, L15, L16",14,T37-6,Package_DIP:DIP-4_W7.62mm
+"Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8",8,2N7002,Package_TO_SOT_SMD:SOT-23
+"R1, R2, R3",3,22,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+"R4, R5, R6",3,10K,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+U1,1,74HC238,Package_SO:SO-16_5.3x10.2mm_P1.27mm
+U2,1,L78L33,Package_TO_SOT_THT:TO-92_HandSolder

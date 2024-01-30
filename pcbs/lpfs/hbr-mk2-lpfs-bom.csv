@@ -1,0 +1,27 @@
+Reference(s),Qty,Value,Footprint
+"C1, C2, C3, C4, C5",5,0.1u,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+"C6, C20",2,680p,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+"C7, C16, C18, C22, C25, C31",6,220p,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+"C8, C12, C23",3,330p,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+"C9, C21, C28, C33, C36, C39",6,100p,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+C10,1,33p,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+"C11, C38",2,47p,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+"C13, C17, C19, C26",4,470p,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+C14,1,820p,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+"C15, C24, C27, C32, C35",5,150p,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+C29,1,22p,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+C30,1,18p,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+"C34, C37, C40",3,68p,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+"C41, C42",2,0.01u,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+"D1, D2, D3, D4, D5, D6, D7, D8, D9, D10",10,1N4148W,Diode_SMD:D_SOD-123
+"D11, D12",2 (matched),1N34/D311,Diode_THT:D_DO-34_SOD68_P2.54mm_Vertical_AnodeUp
+"K1, K2, K3, K4, K5, K6, K7, K8, K9, K10",10,G6K-2F-Y,Relay_SMD:Relay_DPDT_Omron_G6K-2F-Y
+"L1, L2, L3, L4, L5, L6, L7, L8, L9, L10, L11, L12, L13, L14, L15",15,T50-6,Inductor_THT:L_Toroid_Vertical_L13.0mm_W6.5mm_P5.60mm
+"L16, L17",2,1 mH,Inductor_THT:L_Axial_L7.0mm_D3.3mm_P2.54mm_Vertical_Fastron_MICC
+"Q1, Q2, Q3, Q4, Q5",5,2N7002,Package_TO_SOT_SMD:SOT-23
+"R1, R2, R3, R4, R5",5,22,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+"R6, R7, R8, R9, R10",5,10K,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+"R11, R12",2,1K,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+"R13, R14",2,220,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+"R15, R16, R17, R18",4,100,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+"L18, L19",1,BN61-202,---

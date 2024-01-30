@@ -1,0 +1,34 @@
+Reference(s),Qty,Value,Footprint
+C1,1,1u,Capacitor_SMD:CP_Elec_4x5.4
+"C2, C5, C6, C10, C19, C21, C22, C25, C26, C29, C31, C33, C36",13,0.1u,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+"C3, C4, C8, C9, C11, C12, C14, C15, C16, C20, C27, C32",12,10u,Capacitor_SMD:CP_Elec_4x5.4
+C7,1,22u,Capacitor_SMD:CP_Elec_5x5.4
+"C13, C34",2,4.7u,Capacitor_SMD:CP_Elec_4x5.4
+C17,1,1u,Capacitor_SMD:CP_Elec_4x5.4
+C18,1,220u,Capacitor_SMD:CP_Elec_8x10.5
+"C23, C24",2,470u,Capacitor_SMD:CP_Elec_10x10.5
+"C28, C30",2,4.7n,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+C35,1,100p,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+"D1, D2",2,SS14,Diode_SMD:D_SMA_Handsoldering
+D3,1,Blue LED,LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder
+"D4, D5",2,1N4148W,Diode_SMD:D_SOD-123
+Q1,1,MMBT3904,Package_TO_SOT_SMD:SOT-23
+"Q2, Q3, Q4, Q5",4,2N7002,Package_TO_SOT_SMD:SOT-23
+"R1, R23, R24",3,100K,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+"R2, R25",2,47K,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+"R3, R4, R9, R10, R13, R16, R27, R30",8,10K,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+R5,1,100,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+"R6, R11, R28",3,2.2K,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+"R7, R12",2,1K,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+"R8, R18, R29",3,22,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+R15,1,1.3K,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+R17,1,220,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+R19,1,680,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+"R20, R21, R22",3,10,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+R26,1,3.3K,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+"RV1, RV3",2,10K,Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical
+RV2,1,500K,Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical
+RV4,1,100K,Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical
+U1,1,LM7808,Package_TO_SOT_THT:TO-220-3_Vertical
+"U2, U4",2,NE5532,Package_SO:SOIC-8_5.23x5.23mm_P1.27mm
+U3,1,TDA2003,Package_TO_SOT_THT:TO-220-5_P3.4x3.7mm_StaggerOdd_Lead3.8mm_Vertical

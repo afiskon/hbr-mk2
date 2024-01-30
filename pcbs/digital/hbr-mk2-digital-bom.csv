@@ -1,0 +1,12 @@
+Reference(s),Qty,Value,Footprint
+"C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, C14, C16, C17, C18, C19, C20, C25, C26, C27, C28, C29, C30, C31, C32, C33, C34, C35, C36, C37, C38, C39, C40, C41",36,0.1u,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+C15,1,10u,Capacitor_THT:CP_Radial_D5.0mm_P2.50mm
+"C21, C24",2,120p,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+"C22, C23",2,180p,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+"L1, L2, L3",3,T50-6,Inductor_THT:L_Toroid_Vertical_L13.0mm_W6.5mm_P5.60mm
+"R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13, R14, R15, R16, R19, R20, R21, R22, R23, R24, R25, R26, R27, R28, R29, R30, R31, R32",30,22,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+"R17, R18",2,4.7K,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+U1,1,LM7805,Package_TO_SOT_THT:TO-220-3_Vertical
+U2,1,24LC64,Package_SO:SO-8_5.3x6.2mm_P1.27mm
+U3,1,BluePill Board,My_Library:BluePill
+J6,1,Si5351 Board,Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical

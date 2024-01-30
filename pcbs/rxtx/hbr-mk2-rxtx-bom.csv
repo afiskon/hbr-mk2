@@ -1,0 +1,45 @@
+Reference(s),Qty,Value,Footprint
+"C1, C58, C61, C63",4,10u,Capacitor_SMD:CP_Elec_4x5.4
+"C2, C3, C5, C6, C7, C8, C9, C10, C11, C12, C14, C15, C16, C17, C18, C19, C20, C22, C23, C24, C39, C40, C41, C42, C43, C44, C45, C46, C47, C48, C49, C50, C51, C52, C53, C55, C56, C57, C59, C60, C64, C65, C66, C67, C68, C69",46,0.1u,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+C4,1,820p,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+C13,1,100u,Capacitor_SMD:CP_Elec_6.3x7.7
+C21,1,10n,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+C25,1,47n,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+"C26, C28, C30, C32, C34, C36, C37",7,56p,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+"C27, C29, C31, C33, C35, C38",6,270p,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+C54,1,2.2u,Capacitor_SMD:CP_Elec_4x5.4
+C62,1,1n,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+"D1, D2, D5, D6, D7, D8, D9, D10, D11, D12, D13, D14, D15",13,1N4148W,Diode_SMD:D_SOD-123
+"D3, D4",2,1N34/D311,Diode_THT:D_DO-34_SOD68_P2.54mm_Vertical_AnodeUp
+"D16, D17",2,SS14,Diode_SMD:D_SMA_Handsoldering
+"K1, K2, K3, K4, K5, K6, K7, K8, K9",9,G6K-2F-Y,Relay_SMD:Relay_DPDT_Omron_G6K-2F-Y
+"L1, L2, L3, L4, L5, L6, L7, L8, L9",9,FT37-43,Package_DIP:DIP-4_W7.62mm
+"Q1, Q2, Q3, Q4, Q5, Q9",6,MMBT3904,Package_TO_SOT_SMD:SOT-23
+Q6,1,KT3142A,Package_TO_SOT_THT:TO-18-3
+Q7,1,2N7002,Package_TO_SOT_SMD:SOT-23
+Q8,1,MMBT3906,Package_TO_SOT_SMD:SOT-23
+"R1, R3, R11, R14, R23, R25, R49, R51, R64, R67, R82, R84",12,150,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+"R2, R13, R24, R50, R66, R83",6,36,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+"R4, R15, R26",3,820,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+"R5, R9, R16, R20, R21, R27, R31, R38, R44, R57, R72, R75, R77",13,1K,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+"R6, R18, R28, R39, R45, R59, R78",7,3.3K,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+"R7, R12, R58, R70, R71, R73, R74",7,10K,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+"R8, R19, R29, R40, R46, R60, R79",7,68,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+"R10, R22, R33",3,100,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+R17,1,220,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+"R30, R34, R35, R36",4,51,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+R32,1,1.5K,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+"R37, R43, R56, R76",4,1.3K,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+"R41, R47, R61, R80",4,6,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+"R42, R48, R55, R65, R69, R81",6,22,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+"R52, R53, R54",3,82,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+R62,1,2.2K,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+R63,1,680,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+R68,1,1.8K,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+"RV1, RV3",2,10K,Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical
+RV2,1,100K,Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical
+U1,1,L78L33,Package_TO_SOT_THT:TO-92_HandSolder
+U2,1,LM358,Package_SO:SOIC-8_5.23x5.23mm_P1.27mm
+"U3, U4, U5, U7",4,ADE-6,RF_Mini-Circuits:Mini-Circuits_CD542_LandPatternPL-052
+U6,1,NE5532,Package_SO:SOIC-8_5.23x5.23mm_P1.27mm
+"Y1, Y2, Y3, Y4, Y5, Y6, Y7, Y8, Y9, Y10, Y11, Y12, Y13, Y14, Y15",15,9,Crystal:Crystal_HC49-U_Vertical
