@@ -2117,7 +2117,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 99fda24f-e4dc-4cb4-a302-abdd2b41e2ec)
   )
-  (text "see /SWR Bridge/" (at 136.525 53.975 0)
+  (text "see /Root/" (at 137.795 53.975 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid a5bb28b5-7f24-4174-8b7d-5da71b37909c)
   )

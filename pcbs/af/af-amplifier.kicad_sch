@@ -1880,7 +1880,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid b483c5c4-520f-4bc0-8caa-1a3bf3d48c33)
   )
-  (text "see /CW Tone/" (at 160.655 99.06 0)
+  (text "see /Root/" (at 160.655 99.06 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid b8f67861-1bc6-4d00-838f-d65527d4b615)
   )

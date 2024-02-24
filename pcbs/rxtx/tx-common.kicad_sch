@@ -1698,7 +1698,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 517276e9-dfe7-4358-a17d-c4928b90f260)
   )
-  (text "see /Xtal Filters/" (at 67.31 144.78 0)
+  (text "see /Root/" (at 68.58 144.78 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 5e05eed9-23d8-4dd6-a0ed-c9b198c92a6a)
   )

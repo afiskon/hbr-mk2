@@ -1384,7 +1384,7 @@
     (uuid ffaf1e18-30fc-4207-b24d-4ecb5c34b66f)
   )
 
-  (text "see /Xtal Filters/" (at 266.7 102.87 0)
+  (text "see /Root/" (at 266.7 102.87 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 02227c75-3220-417e-bdd2-078366703d53)
   )
