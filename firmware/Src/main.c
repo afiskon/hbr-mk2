@@ -95,9 +95,9 @@ static void MX_TIM2_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
-#define CH_VFO  0
+#define CH_CW   0
 #define CH_CAL  1
-#define CH_CW   2
+#define CH_VFO  2
 
 #define LOOP_DELAY 5
 
@@ -474,10 +474,9 @@ void SetupCLK(uint8_t output, int32_t Fclk, si5351DriveStrength_t driveStrength)
 }
 
 void enableTx(bool enable) {
+	// TODO FIXME: ENABLE_RX_12V is ENABLE_SSB now
     // ENABLE_RX_12V
-    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, enable ? GPIO_PIN_RESET : GPIO_PIN_SET);
-
-    // a delay can be controled here
+    // HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, enable ? GPIO_PIN_RESET : GPIO_PIN_SET);
 
     // ENABLE_TX_12V
     HAL_GPIO_WritePin(GPIOB, GPIO_PIN_15, enable ? GPIO_PIN_SET : GPIO_PIN_RESET);
@@ -698,42 +697,42 @@ void switchLPFs(UseLPF_t lpf) {
 
 void switchBPFs(UseBPF_t bpf) {
     switch(bpf) {
-    case USE_BPF_80:
+    case USE_BPF_10:
         HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_RESET);
         HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
         HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, GPIO_PIN_RESET);
         break;
-    case USE_BPF_40:
+    case USE_BPF_12:
         HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_SET);
         HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
         HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, GPIO_PIN_RESET);
         break;
-    case USE_BPF_30:
+    case USE_BPF_15:
         HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_RESET);
-        HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
-        HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, GPIO_PIN_RESET);
-        break;
-    case USE_BPF_20:
-        HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_SET);
         HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
         HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, GPIO_PIN_RESET);
         break;
     case USE_BPF_17:
+        HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_SET);
+        HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
+        HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, GPIO_PIN_RESET);
+        break;
+    case USE_BPF_20:
         HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_RESET);
         HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
         HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, GPIO_PIN_SET);
         break;
-    case USE_BPF_15:
+    case USE_BPF_30:
         HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_SET);
         HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
         HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, GPIO_PIN_SET);
         break;
-    case USE_BPF_12:
+    case USE_BPF_40:
         HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_RESET);
         HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
         HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, GPIO_PIN_SET);
         break;
-    default: // USE_BPF_10
+    default: // USE_BPF_80
         HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_SET);
         HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
         HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, GPIO_PIN_SET);
