@@ -1567,7 +1567,7 @@ void init() {
     LCD_Goto(0, 0);
     LCD_SendString("HBR MKII");
     LCD_Goto(1, 0);
-    LCD_SendString("Jan 2024");
+    LCD_SendString("May 2024");
     HAL_Delay(1000);
     LCD_Clear();
 
