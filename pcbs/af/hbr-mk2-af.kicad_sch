@@ -1751,7 +1751,7 @@
     (uuid fb6e0422-c51a-43ec-b864-ed2420ce7635)
   )
 
-  (text "Adjust to get a pure \nsine wave, about 7 Vpp" (at 97.79 146.685 0)
+  (text "Adjust to get a pure \nsine wave, about 0.7 Vpp" (at 97.79 146.685 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 041c1bdc-65b8-47f5-80ef-86715d17a642)
   )
