@@ -1392,6 +1392,11 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 202ede57-437f-430d-85ef-ffe04d5b3b22)
   )
+  (text "Consider soldering RV2 and RV3\non the bottom side of the PCB.\nOtherwise they could be difficult\nto reach in the assembled transceiver."
+    (at 127.635 144.145 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 4216477f-1818-4a50-a3e7-5a6408acaa04)
+  )
   (text "Buffer: amp + 6 dB attenuator" (at 208.915 144.78 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid baf9b8a5-d474-4365-aaf7-48094c78d219)
