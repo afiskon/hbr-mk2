@@ -210,10 +210,14 @@ typedef enum {
     USE_BPF_10 = 7,
 } UseBPF_t;
 
+#define FAST_FREQUENCIES_NUMBER 5
+
 typedef struct {
     int32_t minFreq;
     int32_t maxFreq;
     int32_t lastFreq;
+    /* The array of FAST frequencies should be sorted */
+    int32_t fastFreqs[FAST_FREQUENCIES_NUMBER];
     UseLPF_t lpf;
     UseBPF_t bpf;
     /*
@@ -231,6 +235,7 @@ BandInfo_t bands[] = {
         .minFreq  = 3500000,
         .maxFreq  = 3800000,
         .lastFreq = 3560000,
+        .fastFreqs = { 3500000, 3560000, 3570000, 3600000, 3800000 },
         .lpf = USE_LPF_80,
         .bpf = USE_BPF_80,
         .txDriveStrength = SI5351_DRIVE_STRENGTH_2MA,
@@ -239,6 +244,7 @@ BandInfo_t bands[] = {
         .minFreq  = 7000000,
         .maxFreq  = 7200000,
         .lastFreq = 7030000,
+        .fastFreqs = { 7000000, 7030000, 7040000, 7050000, 7200000 },
         .lpf = USE_LPF_40,
         .bpf = USE_BPF_40,
         .txDriveStrength = SI5351_DRIVE_STRENGTH_2MA,
@@ -247,6 +253,7 @@ BandInfo_t bands[] = {
         .minFreq  = 10100000,
         .maxFreq  = 10150000,
         .lastFreq = 10116000,
+        .fastFreqs = { 10100000, 10116000, 10130000, -1, -1 },
         .lpf = USE_LPF_20_30,
         .bpf = USE_BPF_30,
         .txDriveStrength = SI5351_DRIVE_STRENGTH_2MA,
@@ -255,6 +262,7 @@ BandInfo_t bands[] = {
         .minFreq  = 14000000,
         .maxFreq  = 14350000,
         .lastFreq = 14060000,
+        .fastFreqs = { 14000000, 14060000, 14070000, 14101000, 14350000 },
         .lpf = USE_LPF_20_30,
         .bpf = USE_BPF_20,
         .txDriveStrength = SI5351_DRIVE_STRENGTH_2MA,
@@ -263,6 +271,7 @@ BandInfo_t bands[] = {
         .minFreq  = 18068000,
         .maxFreq  = 18168000,
         .lastFreq = 18086000,
+        .fastFreqs = { 18068000, 18086000, 18095000, 18111000, 18168000 },
         .lpf = USE_LPF_15_17,
         .bpf = USE_BPF_17,
         .txDriveStrength = SI5351_DRIVE_STRENGTH_2MA,
@@ -271,6 +280,7 @@ BandInfo_t bands[] = {
         .minFreq  = 21000000,
         .maxFreq  = 21450000,
         .lastFreq = 21060000,
+        .fastFreqs = { 21000000, 21060000, 21070000, 21151000, 21450000 },
         .lpf = USE_LPF_15_17,
         .bpf = USE_BPF_15,
         .txDriveStrength = SI5351_DRIVE_STRENGTH_2MA,
@@ -279,6 +289,7 @@ BandInfo_t bands[] = {
         .minFreq  = 24890000,
         .maxFreq  = 24990000,
         .lastFreq = 24906000,
+        .fastFreqs = { 24890000, 24906000, 24915000, 24931000, 24990000 },
         .lpf = USE_LPF_10_12,
         .bpf = USE_BPF_12,
         .txDriveStrength = SI5351_DRIVE_STRENGTH_4MA,
@@ -287,6 +298,7 @@ BandInfo_t bands[] = {
         .minFreq  = 28000000,
         .maxFreq  = 29700000,
         .lastFreq = 28060000,
+        .fastFreqs = { 28000000, 28060000, 28070000, 28225000, 29000000 },
         .lpf = USE_LPF_10_12,
         .bpf = USE_BPF_10,
         .txDriveStrength = SI5351_DRIVE_STRENGTH_4MA,
@@ -1466,9 +1478,39 @@ void loopMain() {
             displaySMeterOrMode(true);
         } else if(!lockMode) {
             if(buttonNextPressed() == BUTTON_STATUS_PRESSED) {
-                changeBand(1);
+                if(fastMode) {
+                    int32_t i;
+                    for(i = 0; i < FAST_FREQUENCIES_NUMBER; i++) {
+                        if(bands[currentBand].fastFreqs[i] == -1)
+                            continue;
+
+                        if(bands[currentBand].fastFreqs[i] > bands[currentBand].lastFreq) {
+                            bands[currentBand].lastFreq = bands[currentBand].fastFreqs[i];
+                            changeFrequency(0, false, false);
+                            displayFrequency();
+                            break;
+                        }
+                    }
+                } else {
+                    changeBand(1);
+                }
             } else if(buttonPrevPressed() == BUTTON_STATUS_PRESSED) {
-                changeBand(-1);
+                if(fastMode) {
+                    int32_t i;
+                    for(i = FAST_FREQUENCIES_NUMBER-1; i >= 0; i--) {
+                        if(bands[currentBand].fastFreqs[i] == -1)
+                            continue;
+
+                        if(bands[currentBand].fastFreqs[i] < bands[currentBand].lastFreq) {
+                            bands[currentBand].lastFreq = bands[currentBand].fastFreqs[i];
+                            changeFrequency(0, false, false);
+                            displayFrequency();
+                            break;
+                        }
+                    }
+                } else {
+                    changeBand(-1);
+                }
             } else if(buttonFastPressed() == BUTTON_STATUS_PRESSED) {
                 fastMode = !fastMode;
                 if(!fastMode) {
