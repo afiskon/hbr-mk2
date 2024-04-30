@@ -474,10 +474,6 @@ void SetupCLK(uint8_t output, int32_t Fclk, si5351DriveStrength_t driveStrength)
 }
 
 void enableTx(bool enable) {
-	// TODO FIXME: ENABLE_RX_12V is ENABLE_SSB now
-    // ENABLE_RX_12V
-    // HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, enable ? GPIO_PIN_RESET : GPIO_PIN_SET);
-
     // ENABLE_TX_12V
     HAL_GPIO_WritePin(GPIOB, GPIO_PIN_15, enable ? GPIO_PIN_SET : GPIO_PIN_RESET);
 }
@@ -569,6 +565,8 @@ void checkIfRxModeHasChanged() {
 
     if((prevSSBMode != ssbMode) || firstCall) {
         changeFrequency(0, false, true);
+        // ENABLE_SSB_12V
+        HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, ssbMode ? GPIO_PIN_SET : GPIO_PIN_RESET);
         prevSSBMode = ssbMode;
     }
 
@@ -1039,7 +1037,7 @@ void displayKeyerPlaySettings() {
     LCD_SendString("CFM=LOCK");  
 }
 
-bool anyButtonPressed() {
+bool anyButtonPressed(bool ignore_mode) {
     return (buttonNextPressed() == BUTTON_STATUS_PRESSED) ||
         (buttonFastPressed() == BUTTON_STATUS_PRESSED) ||
         (buttonLockPressed() == BUTTON_STATUS_PRESSED) ||
@@ -1048,7 +1046,7 @@ bool anyButtonPressed() {
         (buttonKeyerPressed() == BUTTON_STATUS_PRESSED) ||
         (buttonClarPressed() == BUTTON_STATUS_PRESSED) ||
         buttonDitPressed() || buttonDahPressed() ||
-        (transmittingSSB != enabledSSBMode());
+        ((!ignore_mode) && (transmittingSSB != enabledSSBMode()));
 }
 
 
@@ -1068,14 +1066,14 @@ void updateSWRMeter() {
     }
 
     v_fwd = ADC_ReadVoltage(ADC_CHANNEL_0);
-    if(v_fwd < 0.1) {
+    if(v_fwd < 0.2) {
         /* not transmitting */
         return;
     }
 
     lastSWRCheckTime = tstamp;
     v_ref = ADC_ReadVoltage(ADC_CHANNEL_1);
-    if(v_ref < 0.1) {
+    if(v_ref < 0.2) {
         v_ref = 0.0;
     }
 
@@ -1168,7 +1166,7 @@ void playbackSavedMessage(bool renderCounter, bool renderSWRMeter) {
             }
         }
 
-        if(anyButtonPressed()) {
+        if(anyButtonPressed(false)) {
             break;
         }
 
@@ -1501,23 +1499,52 @@ void loopMain() {
                 // discard any changes in counters
                 (void)getDelta(&htim1, &prevMainCounter, MAIN_DELTA_MULT, MAIN_DELTA_DIV);
                 (void)getDelta(&htim2, &prevClarCounter, CLAR_DELTA_MULT, CLAR_DELTA_DIV);
-            } else if((buttonXmitPressed() == BUTTON_STATUS_PRESSED) && (!enabledSSBMode())) {
-                /* Send saved message */
+            } else if(buttonXmitPressed() == BUTTON_STATUS_PRESSED) {
+                if(enabledSSBMode()) {
+                    /* In SSB mode XMIT works as TUNE */
+                    uint32_t tstamp;
 
-                ensureTransmitMode();
-                resetSWRMeter();
+                    // ENABLE_SSB_12V; disable while transmitting the carrier
+                    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, GPIO_PIN_RESET);
 
-                if(keyerConfig.straightKey) {
-                    initStraightKeyer();
+                    transmittingSSB = false;
+                    ensureTransmitMode();
+                    resetSWRMeter();
+
+                    transmitModeEnterTime = HAL_GetTick();
+                    keyDown();
+
+                    do {
+                        updateSWRMeter();
+                        tstamp = HAL_GetTick();
+                    } while((!anyButtonPressed(true)) && (tstamp - transmitModeEnterTime < 10000));
+
+                    keyUp();
+                    ensureReceiveMode();
+
+                    // ENABLE_SSB_12V; restore the original pin state
+                    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, GPIO_PIN_SET);
+
+                    /* discard any changes in counters */
+                    (void)getDelta(&htim1, &prevMainCounter, MAIN_DELTA_MULT, MAIN_DELTA_DIV);
+                    (void)getDelta(&htim2, &prevClarCounter, CLAR_DELTA_MULT, CLAR_DELTA_DIV);
                 } else {
-                    initIambicKeyer();
+                    /* In CW mode XMIT sends the saved message */
+                    ensureTransmitMode();
+                    resetSWRMeter();
+
+                    if(keyerConfig.straightKey) {
+                        initStraightKeyer();
+                    } else {
+                        initIambicKeyer();
+                    }
+                    playbackSavedMessage(false, true);
+
+                    transmitModeEnterTime = HAL_GetTick();
+
+                    /* loopMain() will be called again from the main loop */
+                    return;
                 }
-                playbackSavedMessage(false, true);
-
-                transmitModeEnterTime = HAL_GetTick();
-
-                /* loopMain() will be called again from the main loop */
-                return;
             }
         }
 
