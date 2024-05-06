@@ -9,4 +9,3 @@ D1,1,SS14,Diode_SMD:D_SMA_Handsoldering
 "R2, R3, R7, R8, R13",5,10K,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
 "R4, R12, R14",3,100K,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
 "R6, R9, R11, R17",4,4.7K,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
-R15,1,0,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
