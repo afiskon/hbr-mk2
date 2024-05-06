@@ -2954,11 +2954,6 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 038a0258-b191-49ab-a724-236be7dff878)
   )
-  (text "== General notes ==\n- HFD4/12 relay is a full equivalent of G6K-2F-Y\n- KT3142A transistor is a full equvalent of 2N2369A\n- KT3142A can be replaced with another transistor with fT >= 500 Mhz"
-    (at 210.82 27.94 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 4a96c21b-3d7a-4c98-848b-8b3234832ffd)
-  )
   (text "10T bifilar\n@ FT50-43" (at 252.73 85.725 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 671cf0f2-a7dd-4996-917c-cf969a74a6a2)

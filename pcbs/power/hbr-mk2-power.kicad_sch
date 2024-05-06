@@ -2018,15 +2018,6 @@
     (uuid ff5b70d1-9111-4e76-a0b0-8f421bc2c925)
   )
 
-  (text "(was: ENABLE_RX_12V)" (at 156.845 152.4 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 05329f55-2119-4ed9-943a-5e97c9451e56)
-  )
-  (text "(was: ENABLE_RX_12V)" (at 140.97 36.195 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 3f5f1c75-1434-4cb5-8aeb-2cdd87a8dd60)
-  )
-
   (global_label "RX_12V" (shape output) (at 266.065 99.695 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 187672b6-4c83-4c5d-a9b4-604e829a0744)
