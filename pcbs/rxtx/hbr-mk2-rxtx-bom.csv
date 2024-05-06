@@ -3,7 +3,7 @@ Reference(s),Qty,Value,Footprint
 "C2, C3, C5, C6, C7, C8, C9, C10, C11, C12, C14, C15, C16, C17, C18, C19, C20, C22, C23, C24, C39, C40, C41, C42, C43, C44, C45, C46, C47, C48, C49, C50, C51, C52, C53, C55, C56, C57, C59, C60, C64, C65, C66, C67, C68, C69",46,0.1u,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
 C4,1,820p,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
 C13,1,100u,Capacitor_SMD:CP_Elec_6.3x7.7
-C21,1,10n,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+C21,1,0.01u,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
 C25,1,47n,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
 "C26, C28, C30, C32, C34, C36, C37",7,56p,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
 "C27, C29, C31, C33, C35, C38",6,270p,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
