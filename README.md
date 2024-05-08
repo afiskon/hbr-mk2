@@ -12,7 +12,6 @@ All HF bands QRP CW/SSB transceiver "HomeBrew Radio, Mark 2".
 * Five favorite frequencies per band (press NEXT/PREV in FAST mode)
 * Class AB amplifier provides ~5W in SSB and 5-10W in CW
 * Has a S-meter and a SWR meter
-* PCBs can be reused in other projects e.g. PA, LPF and BPF boards
 * Open-source firmware, schematic and 3D-printable enclosure
 
 Links:
