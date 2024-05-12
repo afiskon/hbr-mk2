@@ -1,5 +1,7 @@
 # HBR/MK2
 
+![HBR/MK2](images/enclosure/front-panel.jpg)
+
 All HF bands QRP CW/SSB transceiver "HomeBrew Radio, Mark 2".
 
 * Covers 80, 40, 30, 20, 17, 15, 12 and 10 meters
