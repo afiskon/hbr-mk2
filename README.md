@@ -19,5 +19,6 @@ All HF bands QRP CW/SSB transceiver "HomeBrew Radio, Mark 2".
 Links:
 
 * Article (in Russian): https://eax.me/hbr-mk2-transceiver/
+* Post on Hackaday: https://hackaday.com/2024/05/13/github-hosts-ham-radio/
 * Video blog on YouTube: https://www.youtube.com/playlist?list=PL6CWlCy5akj5v1Z4mPysYlqgNtCBYy-wM
 * Demo: https://www.youtube.com/watch?v=D7rNUXjIyPM
