@@ -20,5 +20,6 @@ Links:
 
 * Article (in Russian): https://eax.me/hbr-mk2-transceiver/
 * Post on Hackaday: https://hackaday.com/2024/05/13/github-hosts-ham-radio/
+* Discussion on AmateurRadioBuilders@groups.io: https://groups.io/g/AmateurRadioBuilders/topic/106073792
 * Video blog on YouTube: https://www.youtube.com/playlist?list=PL6CWlCy5akj5v1Z4mPysYlqgNtCBYy-wM
 * Demo: https://www.youtube.com/watch?v=D7rNUXjIyPM
