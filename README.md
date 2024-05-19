@@ -12,7 +12,7 @@ All HF bands QRP CW/SSB transceiver "HomeBrew Radio, Mark 2".
 * 10-30 WPM Elekey-B type keyer + straight key mode
 * Keyer supports record and playback, programmable with paddles
 * Five favorite frequencies per band (press NEXT/PREV in FAST mode)
-* Class AB amplifier provides ~5W in SSB and 5-10W in CW
+* Class AB amplifier provides 5-10W in both CW and SSB
 * Has a S-meter and a SWR meter
 * Open-source firmware, schematic and 3D-printable enclosure
 
