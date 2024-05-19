@@ -4097,7 +4097,7 @@
   )
 
   (symbol (lib_id "Device:C") (at 31.115 180.975 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0c4be313-bfb2-42b4-8c63-ebeb2b575f6f)
     (property "Reference" "C3" (at 34.925 179.705 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -4722,7 +4722,7 @@
     (property "Reference" "J6" (at 74.93 160.02 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "Conn_01x07" (at 74.93 160.655 0)
+    (property "Value" "Si5351 Module" (at 74.93 160.655 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" (at 74.93 171.45 0)
@@ -5238,7 +5238,7 @@
   )
 
   (symbol (lib_id "Device:C") (at 41.91 140.97 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 645e853e-695a-488b-9708-07996314b384)
     (property "Reference" "C8" (at 45.72 139.7 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -5471,7 +5471,7 @@
   )
 
   (symbol (lib_id "Device:C") (at 42.545 180.975 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7f3dc93d-9446-4662-a195-fa3133944a7d)
     (property "Reference" "C7" (at 46.355 179.705 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -5916,7 +5916,7 @@
   )
 
   (symbol (lib_id "Device:C") (at 29.845 140.97 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 980ec5e6-01fc-4c4c-b15d-921e6ae6b93b)
     (property "Reference" "C4" (at 33.655 139.7 0)
       (effects (font (size 1.27 1.27)) (justify left))

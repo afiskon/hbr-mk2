@@ -2962,6 +2962,11 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 6c8dbd60-18ed-4414-b61b-8f89b201ae9a)
   )
+  (text "Quiescent currents: 50 mA per each RD15.\nIncrease to 100 mA if you want a little more gain."
+    (at 187.96 141.605 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 6f78bea7-3d69-45f6-bdfc-4282df3d27df)
+  )
   (text "RX path, PA bypass" (at 59.055 172.72 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 76599908-fd15-419d-ae87-7315a9b0b998)

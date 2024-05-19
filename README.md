@@ -7,7 +7,6 @@ All HF bands QRP CW/SSB transceiver "HomeBrew Radio, Mark 2".
 * Covers 80, 40, 30, 20, 17, 15, 12 and 10 meters
 * Classical single IF superheterodyne design
 * Effective IF derived AGC
-* Voice compression
 * Supports RIT and XIT
 * 10-30 WPM Elekey-B type keyer + straight key mode
 * Keyer supports record and playback, programmable with paddles

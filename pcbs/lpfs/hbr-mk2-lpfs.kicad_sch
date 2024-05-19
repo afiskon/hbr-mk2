@@ -2020,6 +2020,11 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid acd01412-e16b-4bb1-8016-3b64d558d547)
   )
+  (text "<- Hint: solder a 22p capacitor here\n    if you encounter UHF oscillations\n    during transmit (it looks like high\n    current consumption when nothing\n    is tranmitted). Don't worry, this will\n    not affect the sensitivity."
+    (at 55.245 104.775 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid cd6b86cb-ac48-485c-8e45-ef3267f07372)
+  )
 
   (global_label "LPF_80_GND" (shape output) (at 242.57 127.635 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
