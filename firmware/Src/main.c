@@ -807,6 +807,16 @@ void ensureReceiveMode() {
     si5351_EnableOutputs(1 << CH_VFO);
     displaySMeterOrMode(true);
     inTransmitMode = false;
+
+    /*
+     * As it turned out, the receiver is sensitive enough to receive
+     * signals from the configured channels even when the channels are
+     * disabled. For this reason here the channels are configured so that
+     * the signals and their harmonics are above anything we may possible
+     * receive. Doing it for both CH_CW and CH_CAL, just to play it safe.
+     */
+    SetupCLK(CH_CW,  80000000, SI5351_DRIVE_STRENGTH_2MA);
+    SetupCLK(CH_CAL, 80000000, SI5351_DRIVE_STRENGTH_2MA);
 }
 
 ButtonStatus_t buttonPressed(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin, uint32_t* lastPressed) {
