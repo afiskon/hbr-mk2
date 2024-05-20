@@ -2067,7 +2067,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 04cc2031-7765-45d2-b891-35dcd1ddd69c)
   )
-  (text "The signal level should\nbe about 7 dBm, or 1.5 Vpp\nto the 50 Ohm load."
+  (text "The signal level should\nbe about 7 dBm, or 1.5 Vpp\ninto a 50 Ohm load."
     (at 254.635 135.89 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 58c46871-76a5-430a-8fa8-8613ce0fb16e)
