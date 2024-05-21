@@ -35,10 +35,13 @@ for my $fname (@flist) {
             $val .= " (ADE-1,ADE-2)";
         }
         if($val eq "G6K-2F-Y") {
-            $val .= " (HFD4/12)"
+            $val .= " (HFD4/12)";
         }
-        if($val eq "1N34 / D311 (*)") {
-            $val = "1N34/D311";
+        if($val eq "NE5532") {
+            $val .= " (TL072)";
+        }
+        if($val =~ /^1N34/) {
+            $val = "1N34 (Д311,Д9Б)";
         }
 
         $list{"$fp;$val"} += $qty;
