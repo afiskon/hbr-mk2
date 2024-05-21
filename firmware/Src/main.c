@@ -1619,7 +1619,7 @@ void init() {
     snprintf(calmsg, sizeof(calmsg), "Cal; CH%d", CH_CAL);
     LCD_SendString(calmsg);
 
-    si5351_Init(11014);
+    si5351_Init(0);
     si5351PLLConfig_t pll_conf;
     si5351OutputConfig_t out_conf;
     int32_t Fclk = 10000000;
