@@ -1702,7 +1702,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 5e05eed9-23d8-4dd6-a0ed-c9b198c92a6a)
   )
-  (text "Anything between 12 dB and 22 dB will work.\nLess attenuation will give you more power in CW,\nhowever the power will be not even between the bands.\nSee also .txDriveStrength in the firmware source code."
+  (text "Anything between 12 dB and 22 dB will work.\nLess attenuation will give you more power in CW,\nhowever the power will not be even between the bands.\nSee also .txDriveStrength in the firmware source code."
     (at 53.975 144.78 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 80ec7ea4-bab6-45da-aaa6-6e611507dfd2)
