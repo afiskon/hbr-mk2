@@ -1071,7 +1071,6 @@ bool anyButtonPressed(bool ignore_mode) {
         ((!ignore_mode) && (transmittingSSB != enabledSSBMode()));
 }
 
-
 uint32_t lastSWRCheckTime = 0;
 double lastSWRValue = 0.0;
 
