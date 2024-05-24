@@ -38,7 +38,7 @@ for my $fname (@flist) {
             $val .= " (HFD4/12)";
         }
         if($val eq "NE5532") {
-            $val .= " (TL072)";
+            $val .= " (TL072,MC33078)";
         }
         if($val =~ /^1N34/) {
             $val = "1N34 (Д311,Д9Б)";
