@@ -2177,9 +2177,9 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 262914a8-71c8-47a2-aca2-0aa147c16778)
   )
-  (text "== General notes ==\n- HFD4/12 relay is a full equivalent of G6K-2F-Y\n- KT3142A transistor is a full equvalent of 2N2369A\n- KT3142A can be replaced with another transistor with fT >= 500 Mhz\n- ADE-6 mixers can be replaced with ADE-1, ADE-2, etc"
-    (at 54.61 28.575 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
+  (text "== General notes ==\n- HFD4/12 relay is a full equivalent of G6K-2F-Y\n- KT3142A transistor is a full equvalent of 2N2369A\n- KT3142A can be replaced with another transistor with fT >= 500 Mhz\n- ADE-6 mixers can be replaced with ADE-1, ADE-2, etc.\n  Note that ADE-1-24 mixers are *NOT* compatible with ADE-6/ADE-1/..."
+    (at 55.245 31.115 0)
+    (effects (font (face "Courier New") (size 1.5 1.5) (thickness 0.3) bold) (justify left bottom))
     (uuid 4a96c21b-3d7a-4c98-848b-8b3234832ffd)
   )
   (text "see /RX/" (at 281.94 132.715 0)
