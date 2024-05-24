@@ -23,7 +23,7 @@ for my $fname (@flist) {
         next if($nline <= $skiplines);
         my ($nitem, $qty, $refs, $val, $libpart, $fp) = $line =~ $linere;
         if(($val eq "") or ($qty eq "") or ($fp eq "")) {
-            die "Error processing: $line\n"
+            die "Error processing: $line\n";
         }
         if($val eq "FT37-43") {
             $fp = "---";
