@@ -460,7 +460,7 @@ void changeKeyerSpeed(int32_t delta) {
     if(keyerConfig.speedWPM < 10) {
         keyerConfig.speedWPM = 10;
         keyerConfig.straightKey = true;
-        keyerConfig.ditTimeMs = 60*1000/(50*(10+1)); // as for 10 WPM
+        keyerConfig.ditTimeMs = 60*1000/(50*(17+1)); // as for 17 WPM, for XMIT
     } else {
         keyerConfig.straightKey = false;
         if(keyerConfig.speedWPM > 30) {
