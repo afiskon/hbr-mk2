@@ -22,4 +22,4 @@ Links:
 * Post on Hackaday: https://hackaday.com/2024/05/13/github-hosts-ham-radio/
 * Post on DXZone: https://www.dxzone.com/hbr-mk2-hf-qrp-cw-ssb-transceiver/
 * Video blog on YouTube: https://www.youtube.com/playlist?list=PL6CWlCy5akj5v1Z4mPysYlqgNtCBYy-wM
-* Demo: https://www.youtube.com/watch?v=D7rNUXjIyPM
+* Video blog on Archive.org: https://archive.org/details/hbr-mk2-videos
